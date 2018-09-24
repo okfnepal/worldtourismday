@@ -2040,7 +2040,7 @@ h4.m_11 {
 .welcomeText a, .topTextTender a{color: #ffd800}
 .topTextTender{font-size: 13px; padding: 14px 0px}
 .androidDwIcon{padding: 12px 0px}
-.organizedBy{background: #f2f9ef}
+.organizedBy{background: #f2f9ef; padding: 20px 0px}
 .organizedTitle{font-size: 2em;font-weight: 800; text-transform: uppercase; color: #000}
 .organizedTitle span{display: block; font-weight: 400}
-.organizerLogo img{width: 33%; float: left; }
+.organizerLogo img{width: 25%; float: left; margin-right: 2em}
