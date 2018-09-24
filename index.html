@@ -101,185 +101,101 @@
   </div>
   </div>
   <!-- Leaflet -->
-  <link rel="stylesheet" href="lib/leaflet/leaflet.css" />
-  <script src="lib/leaflet/leaflet.js"></script>
-  <script src="data/district.geojson"></script>
-  <style type="text/css">
-    #map {
-      height: 550px;
+
+<link rel="stylesheet" href="./css/leaflet.css"/>
+<script src="./js/map/d3.v3.min.js"></script>
+<script src="./js/map/topojson.v1.min.js"></script>
+<script src="./js/map/leaflet.js"></script>
+
+<style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
     }
-  </style>
-  </head>
 
-  <body>
-    <div id="map"></div>
-    <script>
-      var map = L.map('map').setView([43.8476, 18.3564], 13);
-      var countriesLayer = L.geoJson(district).addTo(map);
-      map.fitBounds(countriesLayer.getBounds());
+    #map {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+    var map = L.map('map').setView([28.1999999, 84.100140], 7);
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+        maxZoom: 8, minZoom: 6,
+        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+            '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+        id: 'mapbox.light'
+    }).addTo(map);
 
-      var point = [27.7172, 85.3240];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Kathmandu</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [26.6646, 87.2718];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Itahari</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [26.7271, 85.9407];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Janakpur</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [26.6398, 87.8942];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Jhapa</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [28.2380, 83.9956];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Pokhara</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [27.5291, 84.3542];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Chitwan</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [27.4368, 27.4368];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Hetauda</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [27.6874, 83.4323];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Butwal</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [28.5175, 81.7787];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Surkhet</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [28.4764, 84.6897];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Gorkha</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [28.0548, 81.6145];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Nepalgunj</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [28.6852, 80.6216];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Dhangadhi</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [28.8314, 80.8987];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Kailali</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [29.2089, 81.7349];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Kalikot</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [28.1780, 83.6987];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Parbat</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [27.7784, 86.1752];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Dolakha</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [27.1341, 85.0649];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Bara</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [26.8760, 87.9335];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Ilam</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [27.6644, 85.3188];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Patan</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-      var point = [27.9711, 84.8985];
-      var myMarker = L.marker(point);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<b>Dhading<div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>', {
-          minWidth: 256
-        }
-      );
-    </script>
 
+    district = L.geoJson(null, {
+        style: function (feature) {
+            return feature.properties && feature.properties.style;
+        },
+
+        onEachFeature: handleLayer,
+
+    }).addTo(map)
+
+
+    d3.json('./js/map/District.topojson', function (error, data) {
+        var neighborhoods = topojson.feature(data, data.objects.collection)
+        district.addData(neighborhoods);
+    })
+
+
+    function handleLayer(feature, layer) {
+        layer.bindLabel(
+            'ID :' + feature.properties.D_ID + '<br>' +
+            'Municipality Name : ' + feature.properties.NAME + '<br>' +
+            'Municipality Level : ' + feature.properties.LEVEL + '<br>' +
+            'District : ' + feature.properties.DISTRICT + '<br>', {noHide: true})
+        layer.setStyle({
+            fillColor: '#def5ff',
+            fillOpacity: 1,
+            color: '#555',
+            weight: 1,
+            opacity: 0.5
+        });
+
+        layer.on({
+            mouseover: enterLayer,
+            mouseout: leaveLayer
+        });
+    }
+
+    function enterLayer() {
+        this.bringToFront();
+        this.setStyle({
+            weight: 2,
+            opacity: 1
+        });
+    }
+
+    function leaveLayer() {
+        this.bringToBack();
+        this.setStyle({
+            weight: 1,
+            opacity: .5
+        });
+    }
+
+
+    var point = [27.7172, 85.3240];
+    var myMarker = L.marker(point);
+    myMarker.addTo(map);
+    myMarker.bindPopup(
+        '<b>Kathmandu</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+        {minWidth: 256}
+    );
+
+</script>
     <script type="text/javascript" src="js/jquery.flexisel.js"></script>
     </div>
     </div>
