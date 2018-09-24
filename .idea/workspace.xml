@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8428465-fa7e-4124-ab88-37d19d2f37cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/district.geojson" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/marker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/nav.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/team1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/team2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/team3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/team4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/tick1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/wish.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/zoom.png" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/bg_image.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.etalage.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.etalage.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.fancybox.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.fancybox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/leaflet/images/layers-2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/leaflet/images/layers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/leaflet/images/marker-icon-2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/leaflet/images/marker-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/leaflet/images/marker-shadow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/leaflet/leaflet-src.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/leaflet/leaflet-src.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/leaflet/leaflet-src.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/leaflet/leaflet-src.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/leaflet/leaflet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/leaflet/leaflet.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/leaflet/leaflet.js.map" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,7 +26,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="6" />
+          <entry key="css" value="8" />
           <entry key="geojson" value="2" />
           <entry key="html" value="1" />
           <entry key="js" value="5" />
@@ -63,7 +35,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="6" />
+          <entry key="CSS" value="8" />
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="5" />
           <entry key="PLAIN_TEXT" value="3" />
@@ -71,14 +43,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="35" />
-          <entry key="html" value="161" />
+          <entry key="css" value="192" />
+          <entry key="html" value="443" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="35" />
-          <entry key="HTML" value="161" />
+          <entry key="CSS" value="192" />
+          <entry key="HTML" value="443" />
         </counts>
       </usages-collector>
     </session>
@@ -88,11 +60,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1777">
-              <caret line="201" column="32" lean-forward="true" selection-start-line="201" selection-start-column="32" selection-end-line="201" selection-end-column="32" />
+            <state relative-caret-position="333">
+              <caret line="358" lean-forward="true" selection-start-line="358" selection-end-line="358" />
               <folding>
                 <element signature="e#9#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/leaflet.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="211" selection-start-line="211" selection-end-line="211" />
             </state>
           </provider>
         </entry>
@@ -103,8 +93,8 @@
     <findStrings>
       <find>distric</find>
       <find>marke</find>
-      <find>leaflet-popup-pane</find>
       <find>bindLabelbindLabel</find>
+      <find>leaflet-popup-pane</find>
       <find>pop</find>
     </findStrings>
   </component>
@@ -159,6 +149,19 @@
               <item name="worldtourismday" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="worldtourismday" type="b2602c69:ProjectViewProjectNode" />
+              <item name="worldtourismday" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="worldtourismday" type="b2602c69:ProjectViewProjectNode" />
+              <item name="worldtourismday" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -191,6 +194,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/worldtourismday/index.html">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -202,15 +215,16 @@
       <option name="presentableId" value="Default" />
       <updated>1537770063620</updated>
       <workItem from="1537770065083" duration="4558000" />
-      <workItem from="1537775854115" duration="645000" />
+      <workItem from="1537775854115" duration="4379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5203000" />
+    <option name="totallyTimeSpent" value="8937000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -265,22 +279,8 @@
     <entry file="file://$PROJECT_DIR$/js/map/leaflet.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="79" column="23" lean-forward="true" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/map/topojson.v1.min.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/leaflet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="771">
-          <caret line="617" selection-end-line="617" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/map/d3.v3.min.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -289,10 +289,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/leaflet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="211" selection-start-line="211" selection-end-line="211" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1777">
-          <caret line="201" column="32" lean-forward="true" selection-start-line="201" selection-start-column="32" selection-end-line="201" selection-end-column="32" />
+        <state relative-caret-position="333">
+          <caret line="358" lean-forward="true" selection-start-line="358" selection-end-line="358" />
           <folding>
             <element signature="e#9#15#0" expanded="true" />
           </folding>

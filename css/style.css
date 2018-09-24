@@ -75,6 +75,30 @@ body a{
 	height: 500px;
 }
 
+.map-pop{
+	font-size: 18px;
+	color: #FF4B2B;
+}
+
+.map-pop{
+	font-size: 18px;
+	color: #FF4B2B;
+}
+
+.map-pop h4{
+	font-size:18px;
+	color: #FF4B2B;
+
+}
+.map-pop h3,h2 {
+	font-size: 16px;
+	color:#222; !important;
+}
+
+
+
+
+
 @media screen and (max-width:800px) {
 	.active {
         display: block;
