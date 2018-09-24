@@ -1954,3 +1954,5 @@ h4.m_11 {
 .welcomeText a, .topTextTender a{color: #ffd800}
 .topTextTender{font-size: 13px; padding: 14px 0px}
 .androidDwIcon{padding: 12px 0px}
+.organizedTitle{font-size: 3em;}
+.organizedTitle span{display: block;}
