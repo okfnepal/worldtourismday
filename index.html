@@ -5,6 +5,7 @@
     <title>World Tourism Day 2018</title>
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
     <link href="css/style.css" rel='stylesheet' type='text/css'/>
+    <link href="./icomoon/style.css" rel='stylesheet' type='text/css'/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -142,7 +143,7 @@
     map.scrollWheelZoom.disable();
 
 
-        district = L.geoJson(null, {
+    district = L.geoJson(null, {
         style: function (feature) {
             return feature.properties && feature.properties.style;
         },
@@ -158,16 +159,16 @@
 
     function handleLayer(feature, layer) {
         var name_district = feature.properties.FIRST_DIST
-        layer.bindLabel(name_district.toUpperCase() + '<br>', {noHide: true})
+
+        layer.bindLabel(name_district.toUpperCase(), {noHide: true, className: "map-pop-up"})
 
         layer.setStyle({
-            fillColor: '#def5ff',
+            fillColor: '#d5f5ff',
             fillOpacity: 1,
             color: '#555',
             weight: 1,
             opacity: 0.5
         });
-
 
 
         layer.on({
@@ -306,7 +307,7 @@
     var myMarker = L.marker(Dhangadi);
     myMarker.addTo(map);
     myMarker.bindPopup(
-       '<div class ="map-pop"><h4>Dhangadi</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ......... </span> </h2></div>',
+        '<div class ="map-pop"><h4>Dhangadi</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ......... </span> </h2></div>',
         {
             minWidth: 256
         }
@@ -351,7 +352,7 @@
     var myMarker = L.marker(Ilam);
     myMarker.addTo(map);
     myMarker.bindPopup(
-       '<div class ="map-pop"><h4>Ilam</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ........ </span> </h2></div>',
+        '<div class ="map-pop"><h4>Ilam</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ........ </span> </h2></div>',
         {
             minWidth: 256
         }
@@ -416,69 +417,74 @@
         <h3 class="m_3">Event Schedule</h3>
         <!-- <div class="close_but"><i class="close1"> </i></div> -->
         <div class="row">
-          <div class="col-md-3 top_box">
-            <div class="view view-ninth"><a href="single.html">
+            <div class="col-md-3 top_box">
+                <div class="view view-ninth"><a href="single.html">
                     <img src="images/dharan.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
                         <p>Event Information</p>
-                      </div>
-                   </a> </div </div> <h4 class="m_4"><a href="#">Dharan City</a></h4>
+                    </div>
+                </a></div
+            </div>
+            <h4 class="m_4"><a href="#">Dharan City</a></h4>
             <p class="m_5">Date: 2018/02/18 9am-10pm</p>
-          </div>
-          <div class="col-md-3 top_box">
+        </div>
+        <div class="col-md-3 top_box">
             <div class="view view-ninth"><a href="single.html">
-                    <img src="images/pokhara.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                      </div>
-                    </a> </div>
+                <img src="images/pokhara.jpg" class="img-responsive" alt=""/>
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+                </div>
+            </a></div>
             <h4 class="m_4"><a href="#">Pokhara City</a></h4>
             <p class="m_5">Date: 2018/02/18 9am-10pm</p>
-          </div>
-          <div class="col-md-3 top_box">
+        </div>
+        <div class="col-md-3 top_box">
             <div class="view view-ninth"><a href="single.html">
-                    <img src="images/biratnagar.jpeg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                      </div>
-                    </a> </div>
+                <img src="images/biratnagar.jpeg" class="img-responsive" alt=""/>
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+                </div>
+            </a></div>
             <h4 class="m_4"><a href="#">Biratnagar</a></h4>
             <p class="m_5">Date: 2018/02/18 9am-10pm</p>
-          </div>
-          <div class="col-md-3 top_box1">
+        </div>
+        <div class="col-md-3 top_box1">
             <div class="view view-ninth"><a href="single.html">
-                    <img src="images/namchey.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                      </div>
-                     </a> </div>
+                <img src="images/namchey.jpg" class="img-responsive" alt=""/>
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+                </div>
+            </a></div>
             <h4 class="m_4"><a href="#">Namchey Bazar</a></h4>
             <p class="m_5">Date: 2018/02/18 9am-10pm</p>
-          </div>
         </div>
     </div>
-  </div>
+</div>
+</div>
 <div class="features-container">
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-6">
                 <div class="featuresBox">
                     <div class="features-icon">
-                        <i class="fas fa-cloud-upload-alt"></i>
+                        <i class="fas icon-cofc"></i>
+
                     </div>
                     <div class="features-content">
+                        <h1>100</h1>
+
                         <h3>
                             <a>Province</a>
                         </h3>
-                       </div>
+                    </div>
                     <div class="read">
                     </div>
                 </div>
@@ -487,9 +493,11 @@
             <div class="col-md-4 col-sm-6">
                 <div class="featuresBox">
                     <div class="features-icon">
-                        <i class="fas fa-sitemap"></i>
+                        <i class="fas icon-theme"></i>
                     </div>
                     <div class="features-content">
+                        <h1>100</h1>
+
                         <h3>
                             <a>Cities</a>
                         </h3>
@@ -502,9 +510,10 @@
             <div class="col-md-4 col-sm-6">
                 <div class="featuresBox">
                     <div class="features-icon">
-                        <i class="fa fa-code"></i>
+                        <i class="fa icon-theme"></i>
                     </div>
                     <div class="features-content">
+                        <h1>100</h1>
                         <h3>
                             <a>Total Population Reach </a>
                         </h3>
@@ -514,81 +523,85 @@
                 </div>
             </div>
         </div>
-
-
-            <div class="col-md-4 col-sm-6">
-                <div class="featuresBox">
-                    <div class="features-icon">
-                        <i class="fas fa-cloud-upload-alt"></i>
-                    </div>
-                    <div class="features-content">
-                        <h3>
-                            <a>Number of Male</a>
-                        </h3>
-                    </div>
-                    <div class="read">
-                    </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="featuresBox">
+                <div class="features-icon">
+                    <i class="fas icon-theme"></i>
                 </div>
-            </div>
+                <div class="features-content">
+                    <h1>100</h1>
 
-            <div class="col-md-4 col-sm-6">
-                <div class="featuresBox">
-                    <div class="features-icon">
-                        <i class="fas fa-sitemap"></i>
-                    </div>
-                    <div class="features-content">
-                        <h3>
-                            <a>Number of Male</a>
-                        </h3>
-
-                    </div>
-
+                    <h3>
+                        <a>Number of Male</a>
+                    </h3>
                 </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-                <div class="featuresBox">
-                    <div class="features-icon">
-                        <i class="fa fa-code"></i>
-                    </div>
-                    <div class="features-content">
-                        <h3>
-                            <a>Age Group  </a>
-                        </h3>
-
-                    </div>
-
+                <div class="read">
                 </div>
             </div>
         </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="featuresBox">
+                <div class="features-icon">
+                    <i class="fas icon-theme"></i>
+                </div>
+                <div class="features-content">
+                    <h1>100</h1>
+
+                    <h3>
+                        <a>Number of Male</a>
+                    </h3>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="featuresBox">
+                <div class="features-icon">
+                    <i class="fa icon-theme"></i>
+                </div>
+                <div class="features-content">
+                    <h1>100</h1>
+
+                    <h3>
+                        <a>Age Group </a>
+                    </h3>
+
+                </div>
+
+            </div>
+        </div>
     </div>
+</div>
 
 </div>
 
-  <div class="organizedBy">
+<div class="organizedBy">
     <div class="container">
-      <div class="row">
-        <div class="col-md-3 organizedTitle">
-          Organized <span>By</span>
+        <div class="row">
+            <div class="col-md-3 organizedTitle">
+                Organized <span>By</span>
+            </div>
+            <div class="col-md-9 organizerLogo">
+                <img src="images/ntb.png" alt="" class="img-responsive">
+                <img src="images/wtd.png" alt="" class="img-responsive">
+            </div>
         </div>
-        <div class="col-md-9 organizerLogo">
-          <img src="images/ntb.png" alt="" class="img-responsive">
-          <img src="images/wtd.png" alt="" class="img-responsive">
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
 
-    <div class="footer">
-      <div class="container">
-          <div class="buddhaEye">
+<div class="footer">
+    <div class="container">
+        <div class="buddhaEye">
             <img src="images/buddhaeye.png" alt="" class="img-responsive">
-          </div>
-          <p>&copy; 2018. Nepal Tourism Board. All Rights Reserved.</p>
-            <img style="max-height:40px; margin:0 auto" src="https://welcomenepal.com/images/google-play.png" alt="welcomenepal"></a>
-      </div>
+        </div>
+        <p>&copy; 2018. Nepal Tourism Board. All Rights Reserved.</p>
+        <img style="max-height:40px; margin:0 auto" src="https://welcomenepal.com/images/google-play.png"
+             alt="welcomenepal"></a>
     </div>
+</div>
 </div>
 </body>
 
