@@ -15,20 +15,20 @@ body a{
 	-o-transition: 0.5s all;
 }
 .header{
-	background:#000;
+	background:#fff;
 	padding: 1.5% 0;
 }
 .header-left{
-	float:left;
-	width: 59%;
+	/* float:left; */
+	width: 100%;
 }
 .logo{
 	float:left;
 	margin-right: 2%;
 }
 .menu{
-	 float:left;
-	 margin: 17px 0 0;
+	 float:right;
+	 /* margin: 17px 0 0; */
 }
   .menu li{
 	display:inline-block;
@@ -41,7 +41,7 @@ body a{
 	font-size: 0.8125em;
 	text-transform: uppercase;
 	padding: 5px 20px;
-	color: #FFF;
+	color: #6d6d6d;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
@@ -51,7 +51,7 @@ body a{
  .menu li a:hover ,.menu li.active a{
 	 background:#fff;
 	 color:#000;
- } 
+ }
  #nav .current a {
 	 color:red;
 }
@@ -61,8 +61,8 @@ body a{
 }
 .nav:before,
 .nav:after {
-    content: " "; 
-    display: table; 
+    content: " ";
+    display: table;
 }
 .nav:after {
     clear: both;
@@ -104,7 +104,7 @@ body a{
     	top:15px;
     }
     .nav li ul{
-    	width:100%;   	
+    	width:100%;
     }
     .menu ul{
     	margin:0;
@@ -194,7 +194,7 @@ body a{
 	background: #333 url('../images/img-sprite.png') no-repeat 0px 1px;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
     filter: alpha(opacity=0); /* IE 5-7 */
-   
+
 	color: transparent;
 	border: none;
 	outline: none;
@@ -292,12 +292,12 @@ ul.icon1 {
 	-moz-border-top-left-radius: 5px;
 	-o-border-top-left-radius: 5px;
 }
-.icon1 ul li:last-child {   
+.icon1 ul li:last-child {
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
-	box-shadow: none;    
+	box-shadow: none;
 }
-.icon1 ul a {    
+.icon1 ul a {
 	_height: 10px; /*IE6 only*/
 	white-space: nowrap;
 	float: none;
@@ -319,7 +319,7 @@ ul.icon1 {
 	left: -100px;
 	top: 0%;
 	margin-top: -6px;
-	border-left: 0;	
+	border-left: 0;
 	border-bottom:20px solid transparent;
 	border-top: 20px solid transparent;
 	border-right:20px solid #323757;
@@ -427,7 +427,7 @@ li.list_desc h4 a:hover{
 	text-decoration:none;
     border: none;
 	cursor: pointer;
-	padding:8px 15px; 
+	padding:8px 15px;
 	display: inline-block;
 	outline: none;
 	-webkit-transition: all 0.3s;
@@ -450,7 +450,7 @@ li.list_desc h4 a:hover{
 	text-decoration:none;
     border: none;
 	cursor: pointer;
-	padding:8px 15px; 
+	padding:8px 15px;
 	display: inline-block;
 	outline: none;
 	-webkit-transition: all 0.3s;
@@ -772,11 +772,11 @@ p.m_5{
 .footer{
 	background:#000;
 	padding:5% 0;
-}		
+}
 ul.footer_box{
 	list-style:none;
 	padding:0;
-}	
+}
 ul.footer_box h4{
 	color:#fff;
 	font-size:1.1em;
@@ -832,7 +832,7 @@ ul.social{
 	list-style:none;
 	padding:0;
 	margin-top: 17%;
-}	
+}
 ul.social li:first-child, ol li:first-child {
 	margin-top: 0px;
 	margin-left: 0;
@@ -840,10 +840,10 @@ ul.social li:first-child, ol li:first-child {
 ul.social li{
 	display:inline-block;
 	margin-right:8px;
-}	
+}
 ul.social li a span:hover{
 	opacity:0.5;
-}		
+}
 li.facebook a span {
 	height: 25px;
 	width: 25px;
@@ -867,13 +867,13 @@ li.pinterest a span {
 	width: 25px;
 	display: block;
 	background: url(../images/img-sprite.png)no-repeat -391px -276px;
-}	
+}
 li.youtube a span {
 	height: 25px;
 	width: 47px;
 	display: block;
 	background: url(../images/img-sprite.png)no-repeat -437px -276px;
-}	
+}
 .dropdown dd, .dropdown dt, .dropdown ul { margin:0px; padding:0px; }
 .dropdown dd { position:relative; }
 .dropdown a, .dropdown a:visited { color:#fff; text-decoration:none; outline:none;}
@@ -894,10 +894,10 @@ li.youtube a span {
         .dropdown span.value { display:none;}
         .dropdown dd ul li a { padding:5px; display:block;font-size: 13px;}
         .dropdown dd ul li a:hover { background-color:#444;}
-        
+
         .dropdown img.flag { border:none; vertical-align:middle; margin-left:10px; }
         .flagvisibility { float: right;}
-        
+
 /*--dropdown--*/
 .dropdown {
     display: block;
@@ -1791,9 +1791,9 @@ fieldset.input input[type="submit"]:hover {
 	top: 63px;
 	right: -55px;
  }
-}	
+}
 @media (max-width:1024px){
-.menu li a {	
+.menu li a {
 	padding: 5px 10px;
  }
 .header_right {
@@ -1823,7 +1823,7 @@ fieldset.input input[type="submit"]:hover {
 	font-size: 17px;
 	padding: 12px 11px 14px 63px;
  }
-}	
+}
 @media (max-width:800px){
 .menu {
 	 margin:10px 0 0;
@@ -1913,7 +1913,7 @@ fieldset.input input[type="submit"]:hover {
   .product1{
   	margin-bottom:20px;
   }
-}  
+}
 @media (max-width:768px){
 .login-page {
 	border-right: none;
@@ -2018,9 +2018,9 @@ h4.m_11 {
 	 width:50px !important;
 	 height:50px !important;
   }
-  .register-top-grid(
+  .register-top-grid{
   	margin-bottom:20px;
-  )
+  }
   .nav {
 	top: 66px;
 	right: 8px;
@@ -2031,3 +2031,13 @@ h4.m_11 {
 	margin: 10px 0;
  }
 }
+
+
+
+/* Rajesh added css */
+.topHeader{width: 100%; background: #FF416C; background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C); background: linear-gradient(to right, #FF4B2B, #FF416C); color: #fff; min-height: 20px}
+.welcomeText{padding: 20px 0px; font-size: 13px}
+.welcomeText span{font-size: 16px; text-transform: uppercase; font-weight: bold; display: inline-block; margin-right: 15px; border-bottom: 3px solid #ffd800}
+.welcomeText a, .topTextTender a{color: #ffd800}
+.topTextTender{font-size: 13px; padding: 14px 0px}
+.androidDwIcon{padding: 12px 0px}
