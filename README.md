@@ -1,2 +1,1 @@
-# worldtourismday
-Website for World Tourism Day
+Demo Template

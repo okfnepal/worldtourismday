@@ -1,0 +1,381 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>World Tourism Day 2018</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<!--<script src="js/jquery.easydropdown.js"></script>-->
+<!--start slider -->
+<link rel="stylesheet" href="css/fwslider.css" media="all">
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/fwslider.js"></script>
+<!--end slider -->
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li><a href="shop.html">Cities</a></li>
+						    	<li><a href="team.html">About</a></li>
+						    	<li><a href="experiance.html">Apply</a></li>
+								<li><a href="contact.html">Contact</a></li>								
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	</div>
+	<!-- Leaflet -->
+		<link rel="stylesheet" href="lib/leaflet/leaflet.css" />
+		<script src="lib/leaflet/leaflet.js"></script>
+		<script src="data/district.geojson"></script>
+		<style type="text/css">
+			#map { height : 550px; }
+		</style>
+	</head>
+	<body>
+		<div id="map"></div>
+		<script>
+	
+			var map = L.map('map').setView([43.8476, 18.3564], 13);
+			var countriesLayer = L.geoJson(district).addTo(map);
+			map.fitBounds(countriesLayer.getBounds());
+		
+		var point = [27.7172, 85.3240];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Kathmandu</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [26.6646, 87.2718];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Itahari</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [26.7271, 85.9407];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Janakpur</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [26.6398, 87.8942];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Jhapa</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [28.2380, 83.9956];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Pokhara</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [27.5291, 84.3542];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Chitwan</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [27.4368, 27.4368];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Hetauda</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [27.6874, 83.4323];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Butwal</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [28.5175, 81.7787];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Surkhet</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [28.4764, 84.6897];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Gorkha</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [28.0548, 81.6145];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Nepalgunj</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [28.6852, 80.6216];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Dhangadhi</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [28.8314, 80.8987];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Kailali</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [29.2089, 81.7349];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Kalikot</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [28.1780, 83.6987];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Parbat</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [27.7784, 86.1752];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Dolakha</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [27.1341, 85.0649];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Bara</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [26.8760, 87.9335];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Ilam</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [27.6644, 85.3188];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Patan</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [27.9711, 84.8985];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Dhading<div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+		</script>
+      
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		</div>
+	</div>
+	<div class="content-bottom">
+		<div class="container">
+			<div class="row content_bottom-text">
+			  <div class="col-md-7">
+				<h3>About Event</h3>
+				<p class="m_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio.</p>
+				<p class="m_2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio.</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="features">
+		<div class="container">
+			<h3 class="m_3">Event Schedule</h3>
+			<div class="close_but"><i class="close1"> </i></div>
+			  <div class="row">
+				<div class="col-md-3 top_box">
+				  <div class="view view-ninth"><a href="single.html">
+                    <img src="images/pic1.jpg" class="img-responsive" alt=""/>
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                      <div class="content">
+                        <h2>Hover Style #9</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+                      </div>
+                   </a> </div
+                  </div>
+                  <h4 class="m_4"><a href="#">nostrud exerci ullamcorper</a></h4>
+                  <p class="m_5">claritatem insitam</p>
+                </div>
+                <div class="col-md-3 top_box">
+					<div class="view view-ninth"><a href="single.html">
+                    <img src="images/pic2.jpg" class="img-responsive" alt=""/>
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                      <div class="content">
+                        <h2>Hover Style #9</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+                      </div>
+                    </a> </div>
+                   <h4 class="m_4"><a href="#">nostrud exerci ullamcorper</a></h4>
+                   <p class="m_5">claritatem insitam</p>
+				</div>
+				<div class="col-md-3 top_box">
+					<div class="view view-ninth"><a href="single.html">
+                    <img src="images/pic3.jpg" class="img-responsive" alt=""/>
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                      <div class="content">
+                        <h2>Hover Style #9</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+                      </div>
+                    </a> </div>
+                   <h4 class="m_4"><a href="#">nostrud exerci ullamcorper</a></h4>
+                   <p class="m_5">claritatem insitam</p>
+				</div>
+				<div class="col-md-3 top_box1">
+					<div class="view view-ninth"><a href="single.html">
+                    <img src="images/pic4.jpg" class="img-responsive" alt=""/>
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                      <div class="content">
+                        <h2>Hover Style #9</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+                      </div>
+                     </a> </div>
+                   <h4 class="m_4"><a href="#">nostrud exerci ullamcorper</a></h4>
+                   <p class="m_5">claritatem insitam</p>
+				</div>
+			</div>
+		 </div>
+	    </div>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Products</h4>
+							<li><a href="#">Mens</a></li>
+							<li><a href="#">Womens</a></li>
+							<li><a href="#">Youth</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>About</h4>
+							<li><a href="#">Careers and internships</a></li>
+							<li><a href="#">Sponserships</a></li>
+							<li><a href="#">team</a></li>
+							<li><a href="#">Catalog Request/Download</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Customer Support</h4>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Shipping and Order Tracking</a></li>
+							<li><a href="#">Easy Returns</a></li>
+							<li><a href="#">Warranty</a></li>
+							<li><a href="#">Replacement Binding Parts</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Newsletter</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+				    			<input type="submit" value="Go">
+				    		   </form>
+					        </div>
+							<ul class="social">	
+							  <li class="facebook"><a href="#"><span> </span></a></li>
+							  <li class="twitter"><a href="#"><span> </span></a></li>
+							  <li class="instagram"><a href="#"><span> </span></a></li>	
+							  <li class="pinterest"><a href="#"><span> </span></a></li>	
+							  <li class="youtube"><a href="#"><span> </span></a></li>										  				
+						    </ul>
+		   					
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+			           <p>© 2014 Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a></p>
+		            </div>
+					  <dl id="sample" class="dropdown">
+				        <dt><a href="#"><span>Change Region</span></a></dt>
+				        <dd>
+				            <ul>
+				                <li><a href="#">Australia<img class="flag" src="images/as.png" alt="" /><span class="value">AS</span></a></li>
+				                <li><a href="#">Sri Lanka<img class="flag" src="images/srl.png" alt="" /><span class="value">SL</span></a></li>
+				                <li><a href="#">Newziland<img class="flag" src="images/nz.png" alt="" /><span class="value">NZ</span></a></li>
+				                <li><a href="#">Pakistan<img class="flag" src="images/pk.png" alt="" /><span class="value">Pk</span></a></li>
+				                <li><a href="#">United Kingdom<img class="flag" src="images/uk.png" alt="" /><span class="value">UK</span></a></li>
+				                <li><a href="#">United States<img class="flag" src="images/us.png" alt="" /><span class="value">US</span></a></li>
+				            </ul>
+				         </dd>
+	   				  </dl>
+   				</div>
+			</div>
+		</div>
+</body>	
+</html>
