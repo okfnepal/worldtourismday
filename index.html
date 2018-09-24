@@ -157,13 +157,10 @@
 
 
     function handleLayer(feature, layer) {
-        var name_district = feature.properties.district
+        var name_district = feature.properties.FIRST_DIST
         layer.bindLabel(name_district.toUpperCase() + '<br>', {noHide: true})
 
-
-
         layer.setStyle({
-
             fillColor: '#def5ff',
             fillOpacity: 1,
             color: '#555',
