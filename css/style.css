@@ -105,6 +105,13 @@ body a{
 	-moz-box-shadow: 0 0 10px #AAA;
 	-o-box-shadow: 0 0 10px #AAA;
 }
+
+.apply{
+	background: blue;
+	padding: 5px 10px;
+	color: #FFF !important;
+
+}
 /*impact-section*/
 
 .features-container {
