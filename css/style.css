@@ -1181,7 +1181,7 @@ ul.team_list{
 	list-style:none;
 }
 ul.team_list h4{
-	color: #555;
+	color: #fff;
 	margin-bottom: 20px;
 	font-size: 1.5em;
 	line-height: 1.2;
@@ -1192,7 +1192,7 @@ ul.team_list h4{
 }
 ul.team_list li {
 	list-style-image: url(../images/marker.png);
-	margin: 0 0px 20px 15px;
+	margin: 0 0px 20px 0px;
 }
 ul.team_list li a {
 	font-size: 0.85em;
@@ -1204,7 +1204,7 @@ ul.team_list li a:hover {
 	color:#444;
 }
 ul.team_list li p{
-	color:#888;
+	color:#fff;
 	font-size:0.85em;
 	line-height:1.5em;
 }
@@ -2096,8 +2096,11 @@ h4.m_11 {
 .impact-container{background: #8E2DE2; background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2); background: linear-gradient(to right, #4A00E0, #8E2DE2);  padding: 80px 0px}
 h3.m_3_title{color: #fff}
 .features-icon img{width: 15%; margin: 0 auto;}
-.about-top-box{background: #abbaab; background: -webkit-linear-gradient(to right, #ffffff, #abbaab); background: linear-gradient(to right, #ffffff, #abbaab); padding: 3% 0%}
-.about-top-box h3.m_2{font-weight: 800}
+.about-top-box{background: #606c88; background: -webkit-linear-gradient(to right, #3f4c6b, #606c88); background: linear-gradient(to right, #3f4c6b, #606c88);  padding: 3% 0%; color: #fff}
+.about-top-box h3.m_2{font-weight: 800; color: #fff}
 .featured-cities{background: #eafbe3}
 .city-list-box{margin-bottom: 30px}
 .contact-holder{padding: 5% 0%}
+.pop_up2 h2{color: #fff}
+.about-container-holder{padding-bottom: 5%}
+.about-left{background: #7474BF; background: -webkit-linear-gradient(to right, #348AC7, #7474BF); background: linear-gradient(to right, #348AC7, #7474BF); padding: 2%}
