@@ -211,6 +211,7 @@ body a{
 	  left: 0;
 	  background: rgba(0,0,0,0.8);
 	  display: none;
+	z-index: 9999;
   }
 
 #popup {
