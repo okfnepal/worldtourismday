@@ -4,8 +4,8 @@
 <head>
     <title>World Tourism Day 2018</title>
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link href="css/style.css" rel='stylesheet' type='text/css'/>
-    <link href="./icomoon/style.css" rel='stylesheet' type='text/css'/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/fwslider.css" media="all">
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/fwslider.js"></script>
+    <script src="js/wow.min.js"></script>
     <!--end slider -->
     <script type="text/javascript">
         $(document).ready(function () {
@@ -54,7 +55,10 @@
             $("#flagSwitcher").click(function () {
                 $(".dropdown img.flag").toggleClass("flagvisibility");
             });
+
+
         });
+
     </script>
 </head>
 
@@ -394,7 +398,7 @@
 <div class="content-bottom">
     <div class="container">
         <div class="row content_bottom-text">
-            <div class="col-md-7">
+            <div class="col-md-7 wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
                 <h3>About Event</h3>
                 <p class="m_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                     tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
@@ -417,7 +421,7 @@
         <h3 class="m_3">Event Schedule</h3>
         <!-- <div class="close_but"><i class="close1"> </i></div> -->
         <div class="row">
-            <div class="col-md-3 top_box">
+            <div class="col-md-3 top_box wow slideInUp" data-wow-duration="2s" data-wow-delay="0.5s">
                 <div class="view view-ninth"><a href="single.html">
                     <img src="images/dharan.jpg" class="img-responsive" alt=""/>
                     <div class="mask mask-1"></div>
@@ -430,7 +434,7 @@
             <h4 class="m_4"><a href="#">Dharan City</a></h4>
             <p class="m_5">Date: 2018/02/18 9am-10pm</p>
         </div>
-        <div class="col-md-3 top_box">
+        <div class="col-md-3 top_box wow slideInUp" data-wow-duration="2s" data-wow-delay="0.5s">
             <div class="view view-ninth"><a href="single.html">
                 <img src="images/pokhara.jpg" class="img-responsive" alt=""/>
                 <div class="mask mask-1"></div>
@@ -442,7 +446,7 @@
             <h4 class="m_4"><a href="#">Pokhara City</a></h4>
             <p class="m_5">Date: 2018/02/18 9am-10pm</p>
         </div>
-        <div class="col-md-3 top_box">
+        <div class="col-md-3 top_box wow slideInUp" data-wow-duration="2s" data-wow-delay="0.5s">
             <div class="view view-ninth"><a href="single.html">
                 <img src="images/biratnagar.jpeg" class="img-responsive" alt=""/>
                 <div class="mask mask-1"></div>
@@ -454,7 +458,7 @@
             <h4 class="m_4"><a href="#">Biratnagar</a></h4>
             <p class="m_5">Date: 2018/02/18 9am-10pm</p>
         </div>
-        <div class="col-md-3 top_box1">
+        <div class="col-md-3 top_box1 wow slideInUp" data-wow-duration="2s" data-wow-delay="0.5s">
             <div class="view view-ninth"><a href="single.html">
                 <img src="images/namchey.jpg" class="img-responsive" alt=""/>
                 <div class="mask mask-1"></div>
@@ -473,11 +477,10 @@
     <div class="container">
         <div class="row">
           <h3 class="m_3 m_3_title">Event Schedule</h3>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                 <div class="featuresBox">
                     <div class="features-icon">
-                        <i class="fas icon-map2"></i>
-
+                      <img src="images/map.png" alt="" class="img-responsive">
                     </div>
                     <div class="features-content">
                         <h1>100</h1>
@@ -491,10 +494,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                 <div class="featuresBox">
                     <div class="features-icon">
-                        <i class="fas icon-theme"></i>
+                        <img src="images/enterprise.png" alt="" class="img-responsive">
                     </div>
                     <div class="features-content">
                         <h1>100</h1>
@@ -508,10 +511,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                 <div class="featuresBox">
                     <div class="features-icon">
-                        <i class="fa icon-theme"></i>
+                        <img src="images/population.png" alt="" class="img-responsive">
                     </div>
                     <div class="features-content">
                         <h1>100</h1>
@@ -523,11 +526,11 @@
 
                 </div>
             </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
+
+        <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
             <div class="featuresBox">
                 <div class="features-icon">
-                    <i class="fas icon-theme"></i>
+                    <img src="images/male-user.png" alt="" class="img-responsive">
                 </div>
                 <div class="features-content">
                     <h1>100</h1>
@@ -540,10 +543,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
             <div class="featuresBox">
                 <div class="features-icon">
-                    <i class="fas icon-theme"></i>
+                    <img src="images/charwoman.png" alt="" class="img-responsive">
                 </div>
                 <div class="features-content">
                     <h1>100</h1>
@@ -556,11 +559,10 @@
 
             </div>
         </div>
-
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
             <div class="featuresBox">
                 <div class="features-icon">
-                    <i class="fa icon-theme"></i>
+                    <img src="images/family.png" alt="" class="img-responsive">
                 </div>
                 <div class="features-content">
                     <h1>100</h1>
@@ -573,6 +575,8 @@
 
             </div>
         </div>
+
+    </div>
     </div>
 </div>
 
@@ -604,6 +608,25 @@
     </div>
 </div>
 </div>
+
+<script>
+var wow = new WOW(
+{
+  boxClass:     'wow',      // animated element css class (default is wow)
+  animateClass: 'animated', // animation css class (default is animated)
+  offset:       0,          // distance to the element when triggering the animation (default is 0)
+  mobile:       true,       // trigger animations on mobile devices (default is true)
+  live:         true,       // act on asynchronously loaded content (default is true)
+  callback:     function(box) {
+    // the callback is fired every time an animation is started
+    // the argument that is passed in is the DOM node being animated
+  },
+  scrollContainer: null,    // optional scroll container selector, otherwise use window,
+  resetAnimation: true,     // reset animation on end (default is true)
+}
+);
+wow.init();
+</script>
 </body>
 
 </html>
