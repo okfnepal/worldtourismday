@@ -2062,3 +2062,5 @@ h4.m_11 {
 .organizedTitle{font-size: 2em;font-weight: 800; text-transform: uppercase; color: #000}
 .organizedTitle span{display: block; font-weight: 400}
 .organizerLogo img{width: 25%; float: left; margin-right: 2em}
+.impact-container{background: #0cebeb; background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb); background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb); 
+}
