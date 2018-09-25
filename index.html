@@ -62,6 +62,14 @@
 </head>
 
 <body>
+<div id="overlay">
+    <div id="popup">
+        <div id="close">X</div>
+        <h2>This is a popup</h2>
+        <p>You just triggered a popup</p>
+    </div>
+</div>
+
   <div class="topHeader">
     <div class="container">
       <div class="row">
@@ -115,7 +123,7 @@
   <script src="./js/map/d3.v3.min.js"></script>
   <script src="./js/map/topojson.v1.min.js"></script>
   <script src="./js/map/leaflet.js"></script>
-
+d
   <style type="text/css">
     body {
       margin: 0;
@@ -598,7 +606,15 @@
                 </div>
 
                 <script>
-                  var wow = new WOW({
+
+                    $(document).ready(function() {
+                            $('#overlay').fadeIn(300);
+                        $('#close').click(function() {
+                            $('#overlay').fadeOut(300);
+                        });
+                    });
+
+                    var wow = new WOW({
                     boxClass: 'wow', // animated element css class (default is wow)
                     animateClass: 'animated', // animation css class (default is animated)
                     offset: 0, // distance to the element when triggering the animation (default is 0)
