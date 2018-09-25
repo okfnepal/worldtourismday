@@ -677,7 +677,7 @@ li.list_desc h4 a:hover{
 }
 .content-bottom{
 	width:100%;
-	background: url(../images/bg_image.jpg)no-repeat center top;
+	background: #eafbe3;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -685,10 +685,11 @@ li.list_desc h4 a:hover{
 	background-position: center;
 	background-size: 100% 100%;
 	height:100%;
-	padding:15% 0;
+	padding:5% 0;
 }
+.aboutImg{padding-top: 32%}
 .content_bottom-text h3{
-	color: #FFF;
+	color: #000;
 	font-size: 3em;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -696,13 +697,13 @@ li.list_desc h4 a:hover{
 	margin: 2% 0 10%;
 }
 p.m_1{
-	color: #FFF;
+	color: #444;
 	font-size: 0.85em;
 	line-height: 2.2em;
 	margin-bottom:6%;
 }
 p.m_2{
-	color: #FFF;
+	color: #444;
 	font-size: 0.85em;
 	line-height: 2.2em;
 }
