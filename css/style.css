@@ -2066,3 +2066,8 @@ h4.m_11 {
 .impact-container{background: #8E2DE2; background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2); background: linear-gradient(to right, #4A00E0, #8E2DE2);  padding: 80px 0px}
 h3.m_3_title{color: #fff}
 .features-icon img{width: 15%; margin: 0 auto;}
+.about-top-box{background: #abbaab; background: -webkit-linear-gradient(to right, #ffffff, #abbaab); background: linear-gradient(to right, #ffffff, #abbaab); padding: 3% 0%}
+.about-top-box h3.m_2{font-weight: 800}
+.featured-cities{background: #eafbe3}
+.city-list-box{margin-bottom: 30px}
+.contact-holder{padding: 5% 0%}
