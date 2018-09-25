@@ -609,7 +609,18 @@
                             $('#overlay').fadeIn(300);
                         $('#close').click(function() {
                             $('#overlay').fadeOut(300);
+
                         });
+
+                        if ($(e.target)) {
+                            $('#overlay').fadeOut(300);
+                        }
+                    });
+
+                    $(document).click(function(e) {
+                        if (!$(e.target).parents().andSelf().is('#overlay')) {
+                            $('#overlay').fadeOut(300);
+                        }
                     });
 
                     var wow = new WOW({
