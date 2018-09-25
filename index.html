@@ -1,632 +1,245 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0033)http://www.smashut.com/portfolio/ -->
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>World Tourism Day 2018</title>
+<link rel="icon" type="image/jpg" href="http://www.smashut.com/portfolio/images/favicon.ico">
+<!-- Please don't steal my work. It's not cool, guys- seriously. I'll find out. -->
+<!-- META -->
+<meta name="verify-v1" content="ZkBIJgyhm0W3GS6xKrroykujO93RPviVi6qfxUNC3H4=">
 
-<head>
-  <title>World Tourism Day 2018</title>
-  <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-  <link rel="stylesheet" href="css/animate.css" type="text/css">
-  <link href="css/style.css" rel='stylesheet' type='text/css' />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-  <script type="application/x-javascript">
-    addEventListener("load", function() {
-      setTimeout(hideURLbar, 0);
-    }, false);
+	<script type="text/javascript" src="./curtains/jquery-1.3.2.min.js"></script>
+	<script src="./curtains/jquery.easing.1.3.js" type="text/javascript"></script>  
 
-    function hideURLbar() {
-      window.scrollTo(0, 1);
-    }
-  </script>
-  <script src="js/jquery.min.js"></script>
-  <!--<script src="js/jquery.easydropdown.js"></script>-->
-  <!--start slider -->
-  <link rel="stylesheet" href="css/fwslider.css" media="all">
-  <script src="js/jquery-ui.min.js"></script>
-  <script src="js/fwslider.js"></script>
-  <script src="js/wow.min.js"></script>
-  <!--end slider -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $(".dropdown img.flag").addClass("flagvisibility");
+	<script type="text/javascript">
+		$(document).ready(function() {
+		
+			$curtainopen = false;
+		
+			$(".rope").click(function(){
+				$(this).blur();
+				if ($curtainopen == false){ 
+					$(this).stop().animate({top: '0px' }, {queue:false, duration:350, easing:'easeOutBounce'}); 
+					$(".leftcurtain").stop().animate({width:'60px'}, 2000 );
+					$(".rightcurtain").stop().animate({width:'60px'},2000 );
+                    $(".rope").hide();
+					$curtainopen = true;
+                }else{
+					$(this).stop().animate({top: '-40px' }, {queue:false, duration:350, easing:'easeOutBounce'}); 
+					$(".leftcurtain").stop().animate({width:'50%'}, 2000 );
+					$(".rightcurtain").stop().animate({width:'51%'}, 2000 );
+					$curtainopen = false;
 
-      $(".dropdown dt a").click(function() {
-        $(".dropdown dd ul").toggle();
-      });
+				}
+				return false;
+			});
+		});	
+	</script>
+	<link href="./curtains/images/open.css" rel="stylesheet" type="text/css">
+	<style type="text/css" charset="utf-8">
+/* See license.txt for terms of usage */
+body{
+	margin:0;
+	padding: 0;
 
-      $(".dropdown dd ul li a").click(function() {
-        var text = $(this).html();
-        $(".dropdown dt a span").html(text);
-        $(".dropdown dd ul").hide();
-        $("#result").html("Selected value is: " + getSelectedValue("sample"));
-      });
-
-      function getSelectedValue(id) {
-        return $("#" + id).find("dt a span.value").html();
-      }
-
-      $(document).bind('click', function(e) {
-        var $clicked = $(e.target);
-        if (!$clicked.parents().hasClass("dropdown"))
-          $(".dropdown dd ul").hide();
-      });
+}
 
 
-      $("#flagSwitcher").click(function() {
-        $(".dropdown img.flag").toggleClass("flagvisibility");
-      });
+.firebugCanvas {
+	position:fixed;
+	top: 0;
+	left: 0;
+	display:none;
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	min-width: 0;
+	max-width: none;
+	min-height: 0;
+	max-height: none;
+	-moz-transform: rotate(0deg);
+	-moz-transform-origin: 50% 50%;
+}
+.firebugCanvas:before, .firebugCanvas:after {
+	content: "";
+}
+.firebugHighlight {
+	z-index: 2147483646;
+	position: fixed;
+	background-color: #3875d7;
+	opacity: 1;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0 none;
+	min-width: 0;
+	max-width: none;
+	min-height: 0;
+	max-height: none;
+}
+.firebugHighlight:before, .firebugHighlight:after {
+	content: "";
+}
+.firebugLayoutBoxParent {
+	z-index: 2147483646;
+	position: fixed;
+	background-color: transparent;
+	border-top: 0 none;
+	border-right: 1px dashed #E00 !important;
+	border-bottom: 1px dashed #E00 !important;
+	border-left: 0 none;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	min-width: 0;
+	max-width: none;
+	min-height: 0;
+	max-height: none;
+	-moz-transform: rotate(0deg);
+	-moz-transform-origin: 50% 50%;
+}
+.firebugRuler {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0 none;
+	opacity: 1;
+	min-width: 0;
+	max-width: none;
+	min-height: 0;
+	max-height: none;
+	-moz-transform: rotate(0deg);
+	-moz-transform-origin: 50% 50%;
+}
+.firebugRuler:before, .firebugRuler:after {
+	content: "";
+}
+.firebugRulerH {
+	top: -15px;
+	left: 0;
+	width: 100%;
+	height: 14px;
+	background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%13%88%00%00%00%0E%08%02%00%00%00L%25a%0A%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%04%F8IDATx%DA%EC%DD%D1n%E2%3A%00E%D1%80%F8%FF%EF%E2%AF2%95%D0D4%0E%C1%14%B0%8Fa-%E9%3E%CC%9C%87n%B9%81%A6W0%1C%A6i%9A%E7y%0As8%1CT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AATE9%FE%FCw%3E%9F%AF%2B%2F%BA%97%FDT%1D~K(%5C%9D%D5%EA%1B%5C%86%B5%A9%BDU%B5y%80%ED%AB*%03%FAV9%AB%E1%CEj%E7%82%EF%FB%18%BC%AEJ8%AB%FA'%D2%BEU9%D7U%ECc0%E1%A2r%5DynwVi%CFW%7F%BB%17%7Dy%EACU%CD%0E%F0%FA%3BX%FEbV%FEM%9B%2B%AD%BE%AA%E5%95v%AB%AA%E3E5%DCu%15rV9%07%B5%7F%B5w%FCm%BA%BE%AA%FBY%3D%14%F0%EE%C7%60%0EU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5JU%88%D3%F5%1F%AE%DF%3B%1B%F2%3E%DAUCNa%F92%D02%AC%7Dm%F9%3A%D4%F2%8B6%AE*%BF%5C%C2Ym~9g5%D0Y%95%17%7C%C8c%B0%7C%18%26%9CU%CD%13i%F7%AA%90%B3Z%7D%95%B4%C7%60%E6E%B5%BC%05%B4%FBY%95U%9E%DB%FD%1C%FC%E0%9F%83%7F%BE%17%7DkjMU%E3%03%AC%7CWj%DF%83%9An%BCG%AE%F1%95%96yQ%0Dq%5Dy%00%3Et%B5'%FC6%5DS%95pV%95%01%81%FF'%07%00%00%00%00%00%00%00%00%00%F8x%C7%F0%BE%9COp%5D%C9%7C%AD%E7%E6%EBV%FB%1E%E0(%07%E5%AC%C6%3A%ABi%9C%8F%C6%0E9%AB%C0'%D2%8E%9F%F99%D0E%B5%99%14%F5%0D%CD%7F%24%C6%DEH%B8%E9rV%DFs%DB%D0%F7%00k%FE%1D%84%84%83J%B8%E3%BA%FB%EF%20%84%1C%D7%AD%B0%8E%D7U%C8Y%05%1E%D4t%EF%AD%95Q%BF8w%BF%E9%0A%BF%EB%03%00%00%00%00%00%00%00%00%00%B8vJ%8E%BB%F5%B1u%8Cx%80%E1o%5E%CA9%AB%CB%CB%8E%03%DF%1D%B7T%25%9C%D5(%EFJM8%AB%CC'%D2%B2*%A4s%E7c6%FB%3E%FA%A2%1E%80~%0E%3E%DA%10x%5D%95Uig%15u%15%ED%7C%14%B6%87%A1%3B%FCo8%A8%D8o%D3%ADO%01%EDx%83%1A~%1B%9FpP%A3%DC%C6'%9C%95gK%00%00%00%00%00%00%00%00%00%20%D9%C9%11%D0%C0%40%AF%3F%EE%EE%92%94%D6%16X%B5%BCMH%15%2F%BF%D4%A7%C87%F1%8E%F2%81%AE%AAvzr%DA2%ABV%17%7C%E63%83%E7I%DC%C6%0Bs%1B%EF6%1E%00%00%00%00%00%00%00%00%00%80cr%9CW%FF%7F%C6%01%0E%F1%CE%A5%84%B3%CA%BC%E0%CB%AA%84%CE%F9%BF)%EC%13%08WU%AE%AB%B1%AE%2BO%EC%8E%CBYe%FE%8CN%ABr%5Dy%60~%CFA%0D%F4%AE%D4%BE%C75%CA%EDVB%EA(%B7%F1%09g%E5%D9%12%00%00%00%00%00%00%00%00%00H%F6%EB%13S%E7y%5E%5E%FB%98%F0%22%D1%B2'%A7%F0%92%B1%BC%24z3%AC%7Dm%60%D5%92%B4%7CEUO%5E%F0%AA*%3BU%B9%AE%3E%A0j%94%07%A0%C7%A0%AB%FD%B5%3F%A0%F7%03T%3Dy%D7%F7%D6%D4%C0%AAU%D2%E6%DFt%3F%A8%CC%AA%F2%86%B9%D7%F5%1F%18%E6%01%F8%CC%D5%9E%F0%F3z%88%AA%90%EF%20%00%00%00%00%00%00%00%00%00%C0%A6%D3%EA%CFi%AFb%2C%7BB%0A%2B%C3%1A%D7%06V%D5%07%A8r%5D%3D%D9%A6%CAu%F5%25%CF%A2%99%97zNX%60%95%AB%5DUZ%D5%FBR%03%AB%1C%D4k%9F%3F%BB%5C%FF%81a%AE%AB'%7F%F3%EA%FE%F3z%94%AA%D8%DF%5B%01%00%00%00%00%00%00%00%00%00%8E%FB%F3%F2%B1%1B%8DWU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*UiU%C7%BBe%E7%F3%B9%CB%AAJ%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5*%AAj%FD%C6%D4%5Eo%90%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5%86%AF%1B%9F%98%DA%EBm%BBV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%AD%D6%E4%F58%01%00%00%00%00%00%00%00%00%00%00%00%00%00%40%85%7F%02%0C%008%C2%D0H%16j%8FX%00%00%00%00IEND%AEB%60%82") repeat-x;
+	border-top: 1px solid #BBBBBB;
+	border-right: 1px dashed #BBBBBB;
+	border-bottom: 1px solid #000000;
+}
+.firebugRulerV {
+	top: 0;
+	left: -15px;
+	width: 14px;
+	height: 100%;
+	background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%0E%00%00%13%88%08%02%00%00%00%0E%F5%CB%10%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%06~IDATx%DA%EC%DD%D1v%A20%14%40Qt%F1%FF%FF%E4%97%D9%07%3BT%19%92%DC%40(%90%EEy%9A5%CB%B6%E8%F6%9Ac%A4%CC0%84%FF%DC%9E%CF%E7%E3%F1%88%DE4%F8%5D%C7%9F%2F%BA%DD%5E%7FI%7D%F18%DDn%BA%C5%FB%DF%97%BFk%F2%10%FF%FD%B4%F2M%A7%FB%FD%FD%B3%22%07p%8F%3F%AE%E3%F4S%8A%8F%40%EEq%9D%BE8D%F0%0EY%A1Uq%B7%EA%1F%81%88V%E8X%3F%B4%CEy%B7h%D1%A2E%EBohU%FC%D9%AF2fO%8BBeD%BE%F7X%0C%97%A4%D6b7%2Ck%A5%12%E3%9B%60v%B7r%C7%1AI%8C%BD%2B%23r%00c0%B2v%9B%AD%CA%26%0C%1Ek%05A%FD%93%D0%2B%A1u%8B%16-%95q%5Ce%DCSO%8E%E4M%23%8B%F7%C2%FE%40%BB%BD%8C%FC%8A%B5V%EBu%40%F9%3B%A72%FA%AE%8C%D4%01%CC%B5%DA%13%9CB%AB%E2I%18%24%B0n%A9%0CZ*Ce%9C%A22%8E%D8NJ%1E%EB%FF%8F%AE%CAP%19*%C3%BAEKe%AC%D1%AAX%8C*%DEH%8F%C5W%A1e%AD%D4%B7%5C%5B%19%C5%DB%0D%EF%9F%19%1D%7B%5E%86%BD%0C%95%A12%AC%5B*%83%96%CAP%19%F62T%86%CAP%19*%83%96%CA%B8Xe%BC%FE)T%19%A1%17xg%7F%DA%CBP%19*%C3%BA%A52T%86%CAP%19%F62T%86%CA%B0n%A9%0CZ%1DV%C6%3D%F3%FCH%DE%B4%B8~%7F%5CZc%F1%D6%1F%AF%84%F9%0F6%E6%EBVt9%0E~%BEr%AF%23%B0%97%A12T%86%CAP%19%B4T%86%CA%B8Re%D8%CBP%19*%C3%BA%A52huX%19%AE%CA%E5%BC%0C%7B%19*CeX%B7h%A9%0C%95%E1%BC%0C%7B%19*CeX%B7T%06%AD%CB%5E%95%2B%BF.%8F%C5%97%D5%E4%7B%EE%82%D6%FB%CF-%9C%FD%B9%CF%3By%7B%19%F62T%86%CA%B0n%D1R%19*%A3%D3%CA%B0%97%A12T%86uKe%D0%EA%B02*%3F1%99%5DB%2B%A4%B5%F8%3A%7C%BA%2B%8Co%7D%5C%EDe%A8%0C%95a%DDR%19%B4T%C66%82fA%B2%ED%DA%9FC%FC%17GZ%06%C9%E1%B3%E5%2C%1A%9FoiB%EB%96%CA%A0%D5qe4%7B%7D%FD%85%F7%5B%ED_%E0s%07%F0k%951%ECr%0D%B5C%D7-g%D1%A8%0C%EB%96%CA%A0%A52T%C6)*%C3%5E%86%CAP%19%D6-%95A%EB*%95q%F8%BB%E3%F9%AB%F6%E21%ACZ%B7%22%B7%9B%3F%02%85%CB%A2%5B%B7%BA%5E%B7%9C%97%E1%BC%0C%EB%16-%95%A12z%AC%0C%BFc%A22T%86uKe%D0%EA%B02V%DD%AD%8A%2B%8CWhe%5E%AF%CF%F5%3B%26%CE%CBh%5C%19%CE%CB%B0%F3%A4%095%A1%CAP%19*Ce%A8%0C%3BO*Ce%A8%0C%95%A12%3A%AD%8C%0A%82%7B%F0v%1F%2FD%A9%5B%9F%EE%EA%26%AF%03%CA%DF9%7B%19*Ce%A8%0C%95%A12T%86%CA%B8Ze%D8%CBP%19*Ce%A8%0C%95%D1ae%EC%F7%89I%E1%B4%D7M%D7P%8BjU%5C%BB%3E%F2%20%D8%CBP%19*Ce%A8%0C%95%A12T%C6%D5*%C3%5E%86%CAP%19*Ce%B4O%07%7B%F0W%7Bw%1C%7C%1A%8C%B3%3B%D1%EE%AA%5C%D6-%EBV%83%80%5E%D0%CA%10%5CU%2BD%E07YU%86%CAP%19*%E3%9A%95%91%D9%A0%C8%AD%5B%EDv%9E%82%FFKOee%E4%8FUe%A8%0C%95%A12T%C6%1F%A9%8C%C8%3D%5B%A5%15%FD%14%22r%E7B%9F%17l%F8%BF%ED%EAf%2B%7F%CF%ECe%D8%CBP%19*Ce%A8%0C%95%E1%93~%7B%19%F62T%86%CAP%19*Ce%A8%0C%E7%13%DA%CBP%19*Ce%A8%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4%AE%A4%F5%25%C0%00%DE%BF%5C'%0F%DA%B8q%00%00%00%00IEND%AEB%60%82") repeat-y;
+	border-left: 1px solid #BBBBBB;
+	border-right: 1px solid #000000;
+	border-bottom: 1px dashed #BBBBBB;
+}
+.overflowRulerX > .firebugRulerV {
+	left: 0;
+}
+.overflowRulerY > .firebugRulerH {
+	top: 0;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 
-    });
-  </script>
+
+.firebugLayoutBox {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	opacity: 1;
+	outline: 0;
+	width: auto;
+	min-width: 0;
+	max-width: none;
+	min-height: 0;
+	max-height: none;
+	-moz-transform: rotate(0deg);
+	-moz-transform-origin: 50% 50%;
+}
+.firebugLayoutBox:before, .firebugLayoutBox:after {
+	content: "";
+}
+.firebugLayoutBoxOffset {
+	z-index: 2147483646;
+	position: fixed;
+	opacity: 0.8;
+}
+.firebugLayoutBoxMargin {
+	background-color: #EDFF64;
+}
+.firebugLayoutBoxBorder {
+	background-color: #666666;
+}
+.firebugLayoutBoxPadding {
+	background-color: SlateBlue;
+}
+.firebugLayoutBoxContent {
+	background-color: SkyBlue;
+}
+.firebugLayoutLine {
+	z-index: 2147483646;
+	background-color: #000000;
+	opacity: 0.4;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0 none;
+	min-width: 0;
+	max-width: none;
+	min-height: 0;
+	max-height: none;
+	-moz-transform: rotate(0deg);
+	-moz-transform-origin: 50% 50%;
+}
+.firebugLayoutLine:before, .firebugLayoutLine:after {
+	content: "";
+}
+.firebugLayoutLineLeft, .firebugLayoutLineRight {
+	position: fixed;
+	width: 1px;
+	height: 100%;
+}
+.firebugLayoutLineTop, .firebugLayoutLineBottom {
+	position: fixed;
+	width: 100%;
+	height: 1px;
+}
+.firebugLayoutLineTop {
+	margin-top: -1px;
+	border-top: 1px solid #999999;
+}
+.firebugLayoutLineRight {
+	border-right: 1px solid #999999;
+}
+.firebugLayoutLineBottom {
+	border-bottom: 1px solid #999999;
+}
+.firebugLayoutLineLeft {
+	margin-left: -1px;
+	border-left: 1px solid #999999;
+}
+.fbProxyElement {
+	position: absolute;
+	background-color: transparent;
+	z-index: 2147483646;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0 none;
+}
+</style>
 </head>
 
+
+<div class="leftcurtain"><img src="./curtains/images/frontcurtain.jpg"/></div>
+	<div class="rightcurtain"><img src="./curtains/images/frontcurtain.jpg"/></div>
 <body>
-<div id="overlay">
-    <div id="popup">
-        <div id="close">X</div>
-        <img src="images/fireworks.jpg" alt="" class="img-responsive">
-    </div>
-</div>
-
-  <div class="topHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 welcomeText">
-          <span>Discover Nepal</span>The official tourism website for Nepal | <a
-                    href="https://www.welcomenepal.cn/" title="请看我们中文网站" target="_blank">请看中文网站</a>
-        </div>
-        <div class="col-md-5 col-sm-12 text-right topTextTender">
-          Visit our <a target="_blank" href="https://trade.welcomenepal.com/">trade site</a> for VN2020 notices
-          &amp; all trade updates<br>For participation in Fairs/Sales Mission and Tender/Quotation, <a
-                    target="_blank" href="https://tenders.welcomenepal.com/"
-                    title="Trade Fairs and Tenders | Nepal Tourism Board">click here</a>
-        </div>
-        <div class="col-md-1 col-sm-12 androidDwIcon">
-          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ntb.welcomenepal">
-                    <img style="max-height:40px;margin-left:10px;" src="https://welcomenepal.com/images/google-play.png"
-                         alt="welcomenepal"></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="header">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-12">
-          <div class="header-left">
-            <div class="logo">
-              <a href="index.html"><img src="images/logo.png" alt=""/></a>
-            </div>
-            <div class="menu">
-              <a class="toggleMenu" href="#"><img src="images/nav.png" alt=""/></a>
-              <ul class="nav" id="nav">
-                <li><a href="cities.html">Cities</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="apply.html">Apply</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <div class="clear"></div>
-              </ul>
-              <script type="text/javascript" src="js/responsive-nav.js"></script>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  <!-- Leaflet -->
-  <link rel="stylesheet" href="./css/leaflet.css" />
-  <script src="./js/map/d3.v3.min.js"></script>
-  <script src="./js/map/topojson.v1.min.js"></script>
-  <script src="./js/map/leaflet.js"></script>
-  <style type="text/css">
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    #map {
-      position: relative;
-      top: 0;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
-
-  </head>
-
-  <body>
-    <div id="map"></div>
-    <script>
-      var map = L.map('map').setView([28.1999999, 84.100140], 7);
-      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-        maxZoom: 8,
-        minZoom: 7,
-        opacity: 0.4,
-        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-        id: 'mapbox.light'
-      }).addTo(map);
-      map.scrollWheelZoom.disable();
-
-
-      district = L.geoJson(null, {
-        style: function(feature) {
-          return feature.properties && feature.properties.style;
-        },
-        onEachFeature: handleLayer,
-
-      }).addTo(map);
-
-      d3.json('./js/map/District.topojson', function(error, data) {
-        var neighborhoods = topojson.feature(data, data.objects.collection)
-        district.addData(neighborhoods);
-      });
-
-
-      function handleLayer(feature, layer) {
-        var name_district = feature.properties.FIRST_DIST
-
-        layer.bindLabel(name_district.toUpperCase(), {
-          noHide: true,
-          className: "map-pop-up"
-        })
-
-        layer.setStyle({
-          fillColor: '#d5f5ff',
-          fillOpacity: 1,
-          color: '#555',
-          weight: 1,
-          opacity: 0.5
-        });
-
-
-        layer.on({
-          mouseover: enterLayer,
-          mouseout: leaveLayer
-        });
-      }
-
-      function enterLayer() {
-        this.bringToFront();
-        this.setStyle({
-          weight: 2,
-          opacity: 0.4,
-
-        });
-      }
-
-
-      function leaveLayer() {
-        this.bringToBack();
-        this.setStyle({
-          weight: 1,
-          opacity: .5,
-
-        });
-      }
-
-      var Dhunche = [28.1727, 85.3136];
-      var myMarker = L.marker(Dhunche);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Dhunche</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> Bhadra 25, 2075</span> </h2><a href="apply.html" class="apply"> Apply </a> </div>', {
-          minWidth: 256
-        }
-      );
-
-      var Kritipur = [27.6630, 85.2774];
-      var myMarker = L.marker(Kritipur);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Kritipur</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> Bhadra 25, 2075</span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Janakpur = [26.7271, 85.9407];
-      var myMarker = L.marker(Janakpur);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Janakpur</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> Bhadra 25, 2075</span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Jomsom = [28.9985, 83.8473];
-      var myMarker = L.marker(Jomsom);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Jomsom</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> Bhadra 25, 2075</span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Lamjung = [28.2765, 84.3542];
-      var myMarker = L.marker(Lamjung);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Lamjung</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ........ </span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Bardiya = [28.3102, 81.4279];
-      var myMarker = L.marker(Bardiya);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Bardiya</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> Bhadra 25, 2075</span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Palpa = [27.8253, 83.6348];
-      var myMarker = L.marker(Palpa);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Palpa</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ........ </span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Butwal = [27.6874, 83.4323];
-      var myMarker = L.marker(Butwal);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Butwal</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ........ </span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Surkhet = [28.5175, 81.7787];
-      var myMarker = L.marker(Surkhet);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Surkhet</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ........ </span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Gorkha = [28.4764, 84.6897];
-      var myMarker = L.marker(Gorkha);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Gorkha</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ........ </span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Parsa = [27.1736, 84.8568];
-      var myMarker = L.marker(Parsa);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Parsa</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ........ </span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Dadeldhura = [29.2188, 80.4994];
-      var myMarker = L.marker(Dadeldhura);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Dadeldhura</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ........ </span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Dhangadi = [28.6852, 80.6216];
-      var myMarker = L.marker(Dhangadi);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Dhangadi</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ......... </span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Kanchanpur = [28.8372, 80.3213];
-      var myMarker = L.marker(Kanchanpur);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Kanchanpur</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ........ </span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Simikot = [29.9863, 81.8334];
-      var myMarker = L.marker(Simikot);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Simikot</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ........ </span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Dolakha = [27.7784, 86.1752];
-      var myMarker = L.marker(Dolakha);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Dolakha</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ........ </span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Dailekh = [28.9262, 81.6473];
-      var myMarker = L.marker(Dailekh);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Dailekh</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ........ </span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Ilam = [26.8760, 87.9335];
-      var myMarker = L.marker(Ilam);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Ilam</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ........ </span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Dopla = [29.0539, 83.0791];
-      var myMarker = L.marker(Dopla);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Dopla</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ........ </span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Dhankuta = [27.0074, 87.3414];
-      var myMarker = L.marker(Dhankuta);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Dhankuta</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ........ </span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-      var Dharan = [26.7944, 87.2817];
-      var myMarker = L.marker(Dharan);
-      myMarker.addTo(map);
-      myMarker.bindPopup(
-        '<div class ="map-pop"><h4>Dharan</h4><h3>Venue: <span> ........ </span></h3><h2>Date:<span> ........ </span> </h2><a href="apply.html" class="apply"> Apply </a></div>', {
-          minWidth: 256
-        }
-      );
-    </script>
-
-
-    <script type="text/javascript" src="js/jquery.flexisel.js"></script>
-
-    </div>
-    </div>
-    <div class="content-bottom">
-      <div class="container">
-        <div class="row content_bottom-text">
-          <div class="col-md-7 wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
-            <h3>About Event</h3>
-            <p class="m_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-              tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
-              exerci tation ullamcorper suscipit
-              lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
-              vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
-              accumsan et iusto odio.</p>
-            <p class="m_2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-              tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
-              exerci tation ullamcorper suscipit
-              lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
-              vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
-              accumsan et iusto odio.</p>
-          </div>
-          <div class="col-md-5 wow slideInRight" data-wow-duration="2s" data-wow-delay="0.5s">
-            <div class="aboutImg">
-              <img src="images/nepaltour.jpg" alt="" class="img-responsive">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="features">
-      <div class="container">
-        <h3 class="m_3">Event Schedule</h3>
-        <!-- <div class="close_but"><i class="close1"> </i></div> -->
-        <div class="row">
-          <div class="col-md-3 top_box wow slideInUp" data-wow-duration="2s" data-wow-delay="0.5s">
-            <div class="view view-ninth"><a href="single.html">
-                    <img src="images/dharan.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"></div>
-                    <div class="mask mask-2"></div>
-                    <div class="content">
-                        <p>Event Information</p>
-                    </div>
-                </a></div </div> <h4 class="m_4"><a href="#">Dharan City</a></h4>
-            <p class="m_5">Date: 2018/02/18 9am-10pm</p>
-          </div>
-          <div class="col-md-3 top_box wow slideInUp" data-wow-duration="2s" data-wow-delay="0.5s">
-            <div class="view view-ninth"><a href="single.html">
-                <img src="images/pokhara.jpg" class="img-responsive" alt=""/>
-                <div class="mask mask-1"></div>
-                <div class="mask mask-2"></div>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                </div>
-            </a></div>
-            <h4 class="m_4"><a href="#">Pokhara City</a></h4>
-            <p class="m_5">Date: 2018/02/18 9am-10pm</p>
-          </div>
-          <div class="col-md-3 top_box wow slideInUp" data-wow-duration="2s" data-wow-delay="0.5s">
-            <div class="view view-ninth"><a href="single.html">
-                <img src="images/biratnagar.jpeg" class="img-responsive" alt=""/>
-                <div class="mask mask-1"></div>
-                <div class="mask mask-2"></div>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                </div>
-            </a></div>
-            <h4 class="m_4"><a href="#">Biratnagar</a></h4>
-            <p class="m_5">Date: 2018/02/18 9am-10pm</p>
-          </div>
-          <div class="col-md-3 top_box1 wow slideInUp" data-wow-duration="2s" data-wow-delay="0.5s">
-            <div class="view view-ninth"><a href="single.html">
-                <img src="images/namchey.jpg" class="img-responsive" alt=""/>
-                <div class="mask mask-1"></div>
-                <div class="mask mask-2"></div>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                </div>
-            </a></div>
-            <h4 class="m_4"><a href="#">Namchey Bazar</a></h4>
-            <p class="m_5">Date: 2018/02/18 9am-10pm</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="features-container impact-container">
-      <div class="container">
-        <div class="row">
-          <h3 class="m_3 m_3_title">Project Impact</h3>
-          <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-            <div class="featuresBox">
-              <div class="features-icon">
-                <img src="images/map.png" alt="" class="img-responsive">
-                    </div>
-                <div class="features-content">
-                  <h1>7</h1>
-
-                  <h3>
-                            <a>Province</a>
-                        </h3>
-                </div>
-                <div class="read">
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-              <div class="featuresBox">
-                <div class="features-icon">
-                  <img src="images/enterprise.png" alt="" class="img-responsive">
-                    </div>
-                  <div class="features-content">
-                    <h1>20</h1>
-
-                    <h3>
-                            <a>Cities</a>
-                        </h3>
-
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="featuresBox">
-                  <div class="features-icon">
-                    <img src="images/population.png" alt="" class="img-responsive">
-                    </div>
-                    <div class="features-content">
-                      <h1>100</h1>
-                      <h3>
-                            <a>Total Population Reach </a>
-                        </h3>
-
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
-                  <div class="featuresBox">
-                    <div class="features-icon">
-                      <img src="images/male-user.png" alt="" class="img-responsive">
-                </div>
-                      <div class="features-content">
-                        <h1>250</h1>
-
-                        <h3>
-                        <a>Number of Male</a>
-                    </h3>
-                      </div>
-                      <div class="read">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
-                    <div class="featuresBox">
-                      <div class="features-icon">
-                        <img src="images/charwoman.png" alt="" class="img-responsive">
-                </div>
-                        <div class="features-content">
-                          <h1>350</h1>
-
-                          <h3>
-                        <a>Number of Female</a>
-                    </h3>
-
-                        </div>
-
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
-                      <div class="featuresBox">
-                        <div class="features-icon">
-                          <img src="images/family.png" alt="" class="img-responsive">
-                </div>
-                          <div class="features-content">
-                            <h1>20 - 40</h1>
-
-                            <h3>
-                        <a>Age Group </a>
-                    </h3>
-
-                          </div>
-
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="organizedBy">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-3 organizedTitle">
-                      Organized <span>By</span>
-                    </div>
-                    <div class="col-md-9 organizerLogo">
-                      <img src="images/ntb.png" alt="" class="img-responsive">
-                      <img src="images/wtd.png" alt="" class="img-responsive">
-            </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="footer">
-                  <div class="container">
-                    <div class="buddhaEye">
-                      <img src="images/buddhaeye.png" alt="" class="img-responsive">
-        </div>
-                      <p>&copy; 2018. Nepal Tourism Board. All Rights Reserved.</p>
-                      <img style="max-height:40px; margin:0 auto" src="https://welcomenepal.com/images/google-play.png"
-             alt="welcomenepal"></a>
-                    </div>
-                  </div>
-                </div>
-
-                <script>
-
-                    $(document).ready(function() {
-                            $('#overlay').fadeIn(300);
-                        $('#close').click(function() {
-                            $('#overlay').fadeOut(300);
-                        });
-                    });
-
-                    var wow = new WOW({
-                    boxClass: 'wow', // animated element css class (default is wow)
-                    animateClass: 'animated', // animation css class (default is animated)
-                    offset: 0, // distance to the element when triggering the animation (default is 0)
-                    mobile: true, // trigger animations on mobile devices (default is true)
-                    live: true, // act on asynchronously loaded content (default is true)
-                    callback: function(box) {
-                      // the callback is fired every time an animation is started
-                      // the argument that is passed in is the DOM node being animated
-                    },
-                    scrollContainer: null, // optional scroll container selector, otherwise use window,
-                    resetAnimation: true, // reset animation on end (default is true)
-                  });
-                  wow.init();
-                </script>
-  </body>
-
+<iframe src="./site/index.html" style="border:0px #FFFFFF none;" name="sagarg" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="1080px" width="100%"></iframe>
+	<a class="rope" href="#">
+		<img src="./curtains/images/rope.png"/>
+	</a>
+</body>
 </html>
