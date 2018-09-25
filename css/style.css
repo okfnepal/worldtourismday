@@ -215,9 +215,9 @@ body a{
   }
 
 #popup {
-	max-width: 600px;
+	max-width: 514px;
 	width: 80%;
-	max-height: 300px;
+	max-height: 900px;
 	height: 80%;
 	padding: 20px;
 	position: relative;
