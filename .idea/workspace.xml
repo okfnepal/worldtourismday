@@ -68,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="422" column="36" lean-forward="true" selection-start-line="422" selection-start-column="36" selection-end-line="422" selection-end-column="36" />
+            <state relative-caret-position="341">
+              <caret line="426" column="25" lean-forward="true" selection-start-line="426" selection-start-column="25" selection-end-line="426" selection-end-column="25" />
               <folding>
                 <element signature="e#9#15#0" expanded="true" />
               </folding>
@@ -259,12 +259,12 @@
       <workItem from="1537795047972" duration="4248000" />
       <workItem from="1537857412168" duration="1865000" />
       <workItem from="1537863166077" duration="1109000" />
-      <workItem from="1537959508179" duration="196000" />
+      <workItem from="1537959508179" duration="672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29483000" />
+    <option name="totallyTimeSpent" value="29959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -376,8 +376,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="422" column="36" lean-forward="true" selection-start-line="422" selection-start-column="36" selection-end-line="422" selection-end-column="36" />
+        <state relative-caret-position="341">
+          <caret line="426" column="25" lean-forward="true" selection-start-line="426" selection-start-column="25" selection-end-line="426" selection-end-column="25" />
           <folding>
             <element signature="e#9#15#0" expanded="true" />
           </folding>
