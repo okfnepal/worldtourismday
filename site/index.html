@@ -74,7 +74,7 @@
     <div class="container">
         <div class="row">
           <div class="digitalTransformation">
-            <p>Lunching of <span>Digital Training Campaign</span> for tourism and <span> tourism development through digital transformation  </span> in <strong>20 cities</strong> of Nepal</p>
+              <p>Luanching of <span>Digital Training Campaign</span> for tourism and <span> tourism development through digital transformation  </span> in <strong>20 cities</strong> of Nepal</p>
           </div>
             <!-- <div class="col-md-6 col-sm-12 welcomeText">
                 <span>Discover Nepal</span>The official tourism website for Nepal | <a
@@ -172,35 +172,13 @@
     });
 
     var legend = L.control({position: 'topright'});
-
-
     legend.onAdd = function (map) {
-        var hashcolor = ['red','#c1a73e','#da8b4a','#26a9e8','#40a500','#e271a1','#900e94'];
-
-
-
         var div = L.DomUtil.create('div', 'legend');
-        var labels = [
-            "Province No. 1",
-            "Province No. 2",
-            "Province No. 3",
-            "Province No. 4",
-            "Province No. 5",
-            "Province No. 6",
-            "Province No. 7"
-        ];
-        var grades = [1, 2, 3, 4, 5, 6, 7];
-        div.innerHTML = '<div><h6>Province Index</h6></div>';
-        for (var i = 0; i < grades.length; i++) {
-            div.innerHTML += '<i style="background:'
-                + hashcolor[i] + '">&nbsp;&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;'
-                + labels[i] + '<br />';
-        }
+        div.innerHTML = '<div class="features-bar"><h6>Digital Marketing Training in 20 cites of Nepal</h6></div>';
         return div;
     }
 
     legend.addTo(map);
-
 
     function handleLayer(feature, layer) {
         var name_district = feature.properties.FIRST_DIST
@@ -240,8 +218,8 @@
             else if (P6.includes(state)) {
                 return '#900e94';
             }
-
         }
+
 
 
         layer.setStyle({

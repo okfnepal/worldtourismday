@@ -109,6 +109,22 @@ body a{
 }
 
 
+.legend{
+	border-left: 5px solid  #11998e ;
+	padding: 20px !important;
+	background: #11998e;
+	background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+	background: linear-gradient(to right, #38ef7d, #11998e);
+}
+.features-bar h6{
+	font-size: 24px;
+	color: #11998e;
+	margin: 0;
+	/*font-color: -webkit-linear-gradient(to right, #38ef7d, #11998e);*/
+	/*font-color: linear-gradient(to right, #38ef7d, #11998e);*/
+}
+
+
 .apply{
 	background: #0078A8;
 	padding: 5px 10px;
