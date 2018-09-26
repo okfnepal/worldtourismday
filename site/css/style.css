@@ -44,9 +44,10 @@ body a {
 }
 .logo a{font-weight: 400;text-transform: uppercase;color: #f7b733; font-size: 20px; letter-spacing: -1px; line-height: 1em}
 .logo a span{display: block; text-align: center; color: #fc4a1a; font-weight: 800;}
+.logo a img{width: 66%}
 .menu{
 	 float:right;
-	 padding-top: 15px
+	 padding-top: 7px
 	 /* margin: 17px 0 0; */
 }
   .menu li{
@@ -66,8 +67,7 @@ body a {
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	font-weight: 600;
-<<<<<<< HEAD
-	font-size: 15px
+	font-size: 14px
  }
  .menu li a:hover ,.menu li.active a{
 	 background:#fff;
@@ -287,13 +287,13 @@ body a {
 }
 
 #popup {
-	max-width: 468px;
-	width: 80%;
+	max-width: 100%;
+	width: 83%;
 	max-height: 900px;
 	padding: 20px;
 	position: relative;
 	background: #fff;
-	margin: 18px auto;
+	margin: 0px auto;
 }
 
 .fireworksOverlay {
