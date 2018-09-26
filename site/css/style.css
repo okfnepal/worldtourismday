@@ -26,7 +26,8 @@ body a{
 	float:left;
 	margin-right: 2%;
 }
-.logo a{font-weight: 800;text-transform: uppercase;color: #11998e; font-size: 20px}
+.logo a{font-weight: 400;text-transform: uppercase;color: #f7b733; font-size: 20px; letter-spacing: -1px; line-height: 1em}
+.logo a span{display: block; text-align: center; color: #fc4a1a; font-weight: 800;}
 .menu{
 	 float:right;
 	 /* margin: 17px 0 0; */
