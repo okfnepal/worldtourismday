@@ -107,11 +107,21 @@ body a{
 	-o-box-shadow: 0 0 10px #AAA;
 }
 
+
 .apply{
-	background: blue;
+	background: #0078A8;
 	padding: 5px 10px;
 	color: #FFF !important;
+	border-radius: 3px;
+	font-size: 16px;
+	float: right;
+	top: -35px;
+	position: relative;
+}
 
+.apply:hover{
+	text-decoration: none;
+	background: #005a7e;
 }
 /*impact-section*/
 
