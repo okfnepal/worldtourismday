@@ -26,6 +26,7 @@ body a{
 	float:left;
 	margin-right: 2%;
 }
+.logo a{font-weight: 800;text-transform: uppercase;color: #11998e; font-size: 20px}
 .menu{
 	 float:right;
 	 /* margin: 17px 0 0; */
@@ -2089,7 +2090,7 @@ h4.m_11 {
 
 
 /* Rajesh added css */
-.topHeader{width: 100%; background: #FF416C; background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C); background: linear-gradient(to right, #FF4B2B, #FF416C); color: #fff; min-height: 20px}
+.topHeader{width: 100%; background: #11998e; background: -webkit-linear-gradient(to right, #38ef7d, #11998e); background: linear-gradient(to right, #38ef7d, #11998e); color: #fff; min-height: 20px}
 .welcomeText{padding: 20px 0px; font-size: 13px}
 .welcomeText span{font-size: 16px; text-transform: uppercase; font-weight: bold; display: inline-block; margin-right: 15px; border-bottom: 3px solid #ffd800}
 .welcomeText a, .topTextTender a{color: #ffd800}
@@ -2111,3 +2112,6 @@ h3.m_3_title{color: #fff}
 .about-container-holder{padding-bottom: 5%}
 .about-left{background: #7474BF; background: -webkit-linear-gradient(to right, #348AC7, #7474BF); background: linear-gradient(to right, #348AC7, #7474BF); padding: 2%}
 .iframeHolder{width: 627px; margin: 0 auto;	}
+.digitalTransformation{text-align: center; font-size: 16px; padding: 1.5% 0%; font-weight: 600}
+.digitalTransformation span, .digitalTransformation strong{color: #fffc00}
+.digitalTransformation strong{font-weight: 800}
