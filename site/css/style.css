@@ -200,8 +200,8 @@ body a {
 
 /* content1 */
 .content1 {
-	background-color: #fff;
-	background: url(../images/green-dots.png);
+	background-color: #f9f6ef;
+	/* background: url(../images/green-dots.png); */
 	background-repeat: repeat;
 }
 
@@ -211,23 +211,25 @@ body a {
 }
 
 .content1 .bg-col2 {
-	background: url(../images/nepaltour.jpg);
+	/* background: url(../images/nepaltour.jpg); */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 40px 0;
-	height: 410px;
+	/* height: 410px; */
 	overflow: hidden;
 }
-
+.content1 .bg-col2 img{padding-bottom: 1.5%}
 .content1 h2 {
-	color: #fff;
+	color: #54431b;
 	font-size: 32px;
+	font-weight: 800;
+	text-transform: uppercase;
 }
 
 .content1 p {
-	color: #fff;
-	font-size: 16px;
+	color: #54431b;
+	font-size: 15px;
 }
 
 
