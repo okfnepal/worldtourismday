@@ -52,14 +52,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="639" />
-          <entry key="html" value="1809" />
+          <entry key="html" value="1812" />
           <entry key="topojson" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="639" />
-          <entry key="HTML" value="1809" />
+          <entry key="HTML" value="1812" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
@@ -88,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="641" column="48" selection-start-line="641" selection-start-column="48" selection-end-line="641" selection-end-column="48" />
+            <state relative-caret-position="-983">
+              <caret line="85" column="62" lean-forward="true" selection-start-line="85" selection-start-column="62" selection-end-line="85" selection-end-column="62" />
               <folding>
                 <element signature="e#9#15#0" expanded="true" />
               </folding>
@@ -288,12 +288,12 @@
       <workItem from="1537795047972" duration="4248000" />
       <workItem from="1537857412168" duration="1865000" />
       <workItem from="1537863166077" duration="1109000" />
-      <workItem from="1537959508179" duration="2076000" />
+      <workItem from="1537959508179" duration="2230000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31363000" />
+    <option name="totallyTimeSpent" value="31517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -412,8 +412,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="641" column="48" selection-start-line="641" selection-start-column="48" selection-end-line="641" selection-end-column="48" />
+        <state relative-caret-position="-983">
+          <caret line="85" column="62" lean-forward="true" selection-start-line="85" selection-start-column="62" selection-end-line="85" selection-end-column="62" />
           <folding>
             <element signature="e#9#15#0" expanded="true" />
           </folding>
