@@ -51,15 +51,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="819" />
-          <entry key="html" value="2094" />
+          <entry key="css" value="823" />
+          <entry key="html" value="2096" />
           <entry key="topojson" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="819" />
-          <entry key="HTML" value="2094" />
+          <entry key="CSS" value="823" />
+          <entry key="HTML" value="2096" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
@@ -76,26 +76,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="571" column="51" selection-start-line="571" selection-start-column="51" selection-end-line="571" selection-end-column="51" />
+            <state relative-caret-position="-4187">
+              <caret line="165" column="29" selection-start-line="165" selection-start-column="25" selection-end-line="165" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#9#15#0" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#3;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="1196" column="34" lean-forward="true" selection-start-line="1196" selection-start-column="34" selection-end-line="1196" selection-end-column="34" />
+            <state relative-caret-position="272">
+              <caret line="212" lean-forward="true" selection-start-line="212" selection-end-line="212" />
             </state>
           </provider>
         </entry>
@@ -118,7 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>leaflet-popup-pane</find>
       <find>pop</find>
       <find>nawal</find>
       <find>rupande</find>
@@ -143,11 +143,12 @@
       <find>lege</find>
       <find>logo</find>
       <find>features-bar</find>
-      <find>feat</find>
       <find>footer</find>
       <find>marker</find>
       <find>class=&quot;editContent&quot;</find>
       <find>.content1 .bg-col2</find>
+      <find>feat</find>
+      <find>fea</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,8 +165,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/site/js/map/District.topojson" />
         <option value="$PROJECT_DIR$/site/css/leaflet.css" />
-        <option value="$PROJECT_DIR$/site/css/style.css" />
         <option value="$PROJECT_DIR$/site/index.html" />
+        <option value="$PROJECT_DIR$/site/css/style.css" />
       </list>
     </option>
   </component>
@@ -298,12 +299,12 @@
       <workItem from="1537795047972" duration="4248000" />
       <workItem from="1537857412168" duration="1865000" />
       <workItem from="1537863166077" duration="1109000" />
-      <workItem from="1537959508179" duration="11346000" />
+      <workItem from="1537959508179" duration="11699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40633000" />
+    <option name="totallyTimeSpent" value="40986000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -429,23 +430,24 @@
     <entry file="file://$PROJECT_DIR$/site/icomoon/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="1196" column="34" lean-forward="true" selection-start-line="1196" selection-start-column="34" selection-end-line="1196" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="571" column="51" selection-start-line="571" selection-start-column="51" selection-end-line="571" selection-end-column="51" />
+        <state relative-caret-position="-4187">
+          <caret line="165" column="29" selection-start-line="165" selection-start-column="25" selection-end-line="165" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#9#15#0" expanded="true" />
             <element signature="n#style#0;n#div#3;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#3;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="212" lean-forward="true" selection-start-line="212" selection-end-line="212" />
         </state>
       </provider>
     </entry>
