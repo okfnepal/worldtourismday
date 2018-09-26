@@ -227,7 +227,7 @@ body a{
 	max-height: 900px;
 	padding: 20px;
 	position: relative;
-	background: #fff;
+	background: url('../images/firework.gif') no-repeat center #fff;
 	margin: 100px auto;
 }
 
