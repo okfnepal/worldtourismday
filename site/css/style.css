@@ -2625,9 +2625,9 @@ fieldset.input input[type="submit"]:hover {
 }
 
 .organizerLogo img {
-	width: 25%;
+	height: 120px;
 	float: left;
-	margin-right: 2em
+	margin-right: 2em;
 }
 
 .impact-container {
