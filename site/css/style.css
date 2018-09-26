@@ -56,18 +56,18 @@ body a {
    	margin-left:0;
  }
  .menu li a{
-  	 display: block;
-	font-size: 0.8125em;
-	text-transform: uppercase;
-	padding: 5px 20px;
-	color: #6d6d6d;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-	font-weight: 600;
-<<<<<<< HEAD
-	font-size: 15px
+	 display: block;
+	 font-size: 0.8125em;
+	 text-transform: uppercase;
+	 font-size: 14px;
+	 font-family: arial;
+	 padding: 5px 20px;
+	 color: #52AFA3;
+	 -webkit-transition: all 0.3s ease;
+	 -moz-transition: all 0.3s ease;
+	 -o-transition: all 0.3s ease;
+	 transition: all 0.3s ease;
+	 font-weight: 500;
  }
  .menu li a:hover ,.menu li.active a{
 	 background:#fff;
@@ -75,8 +75,7 @@ body a {
  }
  #nav .current a {
 	 color:red;
-=======
->>>>>>> a8050e120facc9f36db69f35c302894785801d57
+
 }
 
 .menu li a:hover, .menu li.active a {
