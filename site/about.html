@@ -146,16 +146,63 @@
       </div>
     </div>
   </div>
-  <div class="footer">
+  <section id="footer7">
     <div class="container">
-      <div class="buddhaEye">
-        <img src="images/buddhaeye.png" alt="" class="img-responsive">
-          </div>
-        <p>&copy; 2018. Nepal Tourism Board. All Rights Reserved.</p>
-        <img style="max-height:40px; margin:0 auto" src="https://welcomenepal.com/images/google-play.png" alt="welcomenepal"></a>
-      </div>
+        <div class="buddhaEye">
+            <img src="images/buddhaeye.png" alt="" class="img-responsive">
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/nepaltourismboard"><span class="fa fa-facebook"></span></a>
+            <a href="https://twitter.com/nepaltourismb"><span class="fa fa-twitter" ></span></a>
+            <a href="https://www.youtube.com/channel/UC2SJQgLtP-whF6M4K_m7XAA"><span class="fa fa-youtube"></span></a>
+        </div>
+
+        <ul class="list-inline">
+            <li><a href="./cities.html">Cities</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./apply.html">Apply</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+
+        </ul>
     </div>
-  </div>
+    <p class="copyright">© 2018. Nepal Tourism Board. All Rights Reserved.</p>
+
+
+    <script>
+
+    $(document).ready(function () {
+        $('#overlay').fadeIn(300);
+        $('#close').click(function () {
+            $('#overlay').fadeOut(300);
+
+        });
+
+        if ($(e.target)) {
+            $('#overlay').fadeOut(300);
+        }
+    });
+
+    $(document).click(function (e) {
+        if (!$(e.target).parents().andSelf().is('#overlay')) {
+            $('#overlay').fadeOut(300);
+        }
+    });
+
+    var wow = new WOW({
+        boxClass: 'wow', // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset: 0, // distance to the element when triggering the animation (default is 0)
+        mobile: true, // trigger animations on mobile devices (default is true)
+        live: true, // act on asynchronously loaded content (default is true)
+        callback: function (box) {
+            // the callback is fired every time an animation is started
+            // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null, // optional scroll container selector, otherwise use window,
+        resetAnimation: true, // reset animation on end (default is true)
+    });
+    wow.init();
+</script>
 </body>
 
 </html>

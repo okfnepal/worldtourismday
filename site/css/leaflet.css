@@ -108,7 +108,7 @@ Firefox old*/
 
 
 .leaflet-marker-icon:hover {
-    animation-name: shake;
+    animation-name: shake !important;
     animation-fill-mode: both;
     animation-duration: 1s;
     animation-direction: alternate;
