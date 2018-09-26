@@ -73,9 +73,10 @@
 <div class="topHeader">
     <div class="container">
         <div class="row">
-          <div class="digitalTransformation">
-            <p>Lunching of <span>Digital Training Campaign</span> for tourism and <span> tourism development through digital transformation  </span> in <strong>20 cities</strong> of Nepal</p>
-          </div>
+            <div class="digitalTransformation">
+                <p>Luanching of <span>Digital Training Campaign</span> for tourism and <span> tourism development through digital transformation  </span>
+                    in <strong>20 cities</strong> of Nepal</p>
+            </div>
             <!-- <div class="col-md-6 col-sm-12 welcomeText">
                 <span>Discover Nepal</span>The official tourism website for Nepal | <a
                     href="https://www.welcomenepal.cn/" title="请看我们中文网站" target="_blank">请看中文网站</a>
@@ -172,35 +173,13 @@
     });
 
     var legend = L.control({position: 'topright'});
-
-
     legend.onAdd = function (map) {
-        var hashcolor = ['red','#c1a73e','#da8b4a','#26a9e8','#40a500','#e271a1','#900e94'];
-
-
-
         var div = L.DomUtil.create('div', 'legend');
-        var labels = [
-            "Province No. 1",
-            "Province No. 2",
-            "Province No. 3",
-            "Province No. 4",
-            "Province No. 5",
-            "Province No. 6",
-            "Province No. 7"
-        ];
-        var grades = [1, 2, 3, 4, 5, 6, 7];
-        div.innerHTML = '<div><h6>Province Index</h6></div>';
-        for (var i = 0; i < grades.length; i++) {
-            div.innerHTML += '<i style="background:'
-                + hashcolor[i] + '">&nbsp;&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;'
-                + labels[i] + '<br />';
-        }
+        div.innerHTML = '<div class="features-bar"><h6>Digital Marketing Training in 20 cites of Nepal</h6></div>';
         return div;
     }
 
     legend.addTo(map);
-
 
     function handleLayer(feature, layer) {
         var name_district = feature.properties.FIRST_DIST
@@ -240,7 +219,6 @@
             else if (P6.includes(state)) {
                 return '#900e94';
             }
-
         }
 
 
@@ -461,8 +439,20 @@
         <div class="row content_bottom-text">
             <div class="col-md-7 wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
                 <h3>About Event</h3>
-                <p class="m_1">Today, people and businesses connect, exchange information and execute transactions in ways never before imagined. The combination of digital platforms, user-generated content and feedback, social media integration, global positioning services, and the use of big data and artificial intelligence, has transformed the way people experience, consume and share information.</p>
-                <p class="m_2">Nepal Tourism Board has marked the World Tourism Day by bringing ICT awareness and digital capacity building in 20 emerging cities of Nepal for tourism. For this campaign, Nepal Tourism Board has prepared for one-day workshops in 20 different cities all around Nepal. In every city, there would be 25-30 participants from tourism background, like a travel agency, hotels, online travel agency, travel activities. This program will be a good opportunity for them to learn about digital technologies which will help them to boost their business. While the Tourism sector has been at the forefront of digital disruption, exponential technological change means that the sector must innovate, and all stakeholders must collaborate, on a near-constant basis in order to remain competitive.</p>
+                <p class="m_1">Today, people and businesses connect, exchange information and execute transactions in
+                    ways never before imagined. The combination of digital platforms, user-generated content and
+                    feedback, social media integration, global positioning services, and the use of big data and
+                    artificial intelligence, has transformed the way people experience, consume and share
+                    information.</p>
+                <p class="m_2">Nepal Tourism Board has marked the World Tourism Day by bringing ICT awareness and
+                    digital capacity building in 20 emerging cities of Nepal for tourism. For this campaign, Nepal
+                    Tourism Board has prepared for one-day workshops in 20 different cities all around Nepal. In every
+                    city, there would be 25-30 participants from tourism background, like a travel agency, hotels,
+                    online travel agency, travel activities. This program will be a good opportunity for them to learn
+                    about digital technologies which will help them to boost their business. While the Tourism sector
+                    has been at the forefront of digital disruption, exponential technological change means that the
+                    sector must innovate, and all stakeholders must collaborate, on a near-constant basis in order to
+                    remain competitive.</p>
             </div>
             <div class="col-md-5 wow slideInRight" data-wow-duration="2s" data-wow-delay="0.5s">
                 <div class="aboutImg">
@@ -575,7 +565,7 @@
                     <div class="features-content">
                         <h1>700</h1>
                         <h3>
-                            <a>Target Audience  </a>
+                            <a>Target Audience </a>
                         </h3>
 
                     </div>
@@ -592,7 +582,7 @@
                         <h1>105</h1>
 
                         <h3>
-                            <a>Hospitality  Industry</a>
+                            <a>Hospitality Industry</a>
                         </h3>
                     </div>
                     <div class="read">
@@ -608,7 +598,7 @@
                         <h1>350</h1>
 
                         <h3>
-                            <a>Tour & trekking  professionals </a>
+                            <a>Tour & trekking professionals </a>
                         </h3>
 
                     </div>
@@ -640,13 +630,16 @@
 
 <div class="organizedBy">
     <div class="container">
+
         <div class="row">
-            <div class="col-md-3 organizedTitle">
-                Organized <span>By</span>
+            <div class="col-md-2 col-lg-offset-2">
             </div>
-            <div class="col-md-9 organizerLogo">
+            <div class="col-md-6 organizerLogo">
                 <img src="images/ntb.png" alt="" class="img-responsive">
                 <img src="images/wtd.png" alt="" class="img-responsive">
+            </div>
+
+            <div class="col-md-2 col-lg-offset-2">
             </div>
         </div>
     </div>
