@@ -196,6 +196,7 @@ body a {
 	background-size: cover;
 	padding: 40px 0;
 	height: 410px;
+	overflow: hidden;
 }
 
 .content1 h2 {
