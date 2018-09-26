@@ -152,11 +152,10 @@ body a {
 }
 
 .features-bar h6 {
-	font-size: 24px;
+	font-size: 22px;
 	color: #11998e;
 	margin: 0;
-	/*font-color: -webkit-linear-gradient(to right, #38ef7d, #11998e);*/
-	/*font-color: linear-gradient(to right, #38ef7d, #11998e);*/
+	font-weight: 400;
 }
 
 .apply {
@@ -176,6 +175,41 @@ body a {
 }
 
 /*impact-section*/
+
+
+/* content1 */
+.content1 {
+	background-color: #fff;
+	background: url(../images/green-dots.png);
+	background-repeat: repeat;
+}
+
+.content1 .bg-col1 {
+	padding: 40px 20px 40px 80px;
+	min-height: 300px;
+}
+
+.content1 .bg-col2 {
+	background: url(../images/nepaltour.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 40px 0;
+	height: 410px;
+}
+
+.content1 h2 {
+	color: #fff;
+	font-size: 32px;
+}
+
+.content1 p {
+	color: #fff;
+	font-size: 16px;
+}
+
+
+
 
 .features-container {
 	padding: 30px 0;

@@ -27,7 +27,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="17" />
+          <entry key="css" value="18" />
           <entry key="geojson" value="2" />
           <entry key="html" value="9" />
           <entry key="jpg" value="1" />
@@ -40,7 +40,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="17" />
+          <entry key="CSS" value="18" />
           <entry key="HTML" value="9" />
           <entry key="Image" value="3" />
           <entry key="JavaScript" value="8" />
@@ -51,15 +51,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="639" />
-          <entry key="html" value="1874" />
+          <entry key="css" value="653" />
+          <entry key="html" value="1900" />
           <entry key="topojson" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="639" />
-          <entry key="HTML" value="1874" />
+          <entry key="CSS" value="653" />
+          <entry key="HTML" value="1900" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
@@ -76,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="110" column="58" selection-start-line="110" selection-start-column="58" selection-end-line="110" selection-end-column="58" />
+            <state relative-caret-position="270">
+              <caret line="445" column="40" lean-forward="true" selection-start-line="445" selection-start-column="40" selection-end-line="445" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#9#15#0" expanded="true" />
@@ -90,11 +90,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="376">
+              <caret line="199" lean-forward="true" selection-start-line="199" selection-end-line="199" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/css/leaflet.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -112,7 +121,6 @@
       <find>rupande</find>
       <find>sha</find>
       <find>fas</find>
-      <find>feat</find>
       <find>icon-cofc</find>
       <find>features-icon</find>
       <find>overlay</find>
@@ -129,7 +137,10 @@
       <find>age</find>
       <find>age grou</find>
       <find>orga</find>
+      <find>lege</find>
+      <find>feat</find>
       <find>logo</find>
+      <find>features-bar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,8 +157,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/site/js/map/District.topojson" />
         <option value="$PROJECT_DIR$/site/css/leaflet.css" />
-        <option value="$PROJECT_DIR$/site/index.html" />
         <option value="$PROJECT_DIR$/site/css/style.css" />
+        <option value="$PROJECT_DIR$/site/index.html" />
       </list>
     </option>
   </component>
@@ -223,12 +234,6 @@
               <item name="worldtourismday" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="site" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="images" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="worldtourismday" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="site" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
@@ -292,12 +297,12 @@
       <workItem from="1537795047972" duration="4248000" />
       <workItem from="1537857412168" duration="1865000" />
       <workItem from="1537863166077" duration="1109000" />
-      <workItem from="1537959508179" duration="4279000" />
+      <workItem from="1537959508179" duration="5480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33566000" />
+    <option name="totallyTimeSpent" value="34767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -393,13 +398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/css/leaflet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="652" column="24" selection-start-line="652" selection-start-column="24" selection-end-line="652" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/embed.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="574">
@@ -407,22 +405,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/index.html">
+    <entry file="file://$PROJECT_DIR$/site/css/leaflet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="110" column="58" selection-start-line="110" selection-start-column="58" selection-end-line="110" selection-end-column="58" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9#15#0" expanded="true" />
-            <element signature="n#div#3;n#body#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/site/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="376">
+          <caret line="199" lean-forward="true" selection-start-line="199" selection-end-line="199" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="445" column="40" lean-forward="true" selection-start-line="445" selection-start-column="40" selection-end-line="445" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9#15#0" expanded="true" />
+            <element signature="n#div#3;n#body#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
