@@ -49,22 +49,74 @@
     max-width: 15000px !important;
 }
 
+Firefox old*/
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.leaflet-marker-icon {
+    -moz-animation: blink normal 1s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 1s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 1s infinite ease-in-out; /* IE */
+    animation: blink normal 1s infinite ease-in-out; /* Opera and prob css3 final iteration */
+
+}
+
 
 
 .leaflet-marker-icon:hover {
-    /* Start the shake animation and make the animation last for 0.5 seconds */
     animation-name: shake;
     animation-fill-mode: both;
     animation-duration: 1s;
     animation-direction: alternate;
     -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
-
-
-    /* When the animation is finished, start again */
 }
 
 @keyframes shake {
-     0% { top: 1px; }
+    0% { top: 1px; }
     100% { top: -20px; }
 }
 
