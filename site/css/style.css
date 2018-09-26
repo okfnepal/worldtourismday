@@ -30,6 +30,7 @@ body a{
 .logo a span{display: block; text-align: center; color: #fc4a1a; font-weight: 800;}
 .menu{
 	 float:right;
+	 padding-top: 15px
 	 /* margin: 17px 0 0; */
 }
   .menu li{
@@ -49,6 +50,7 @@ body a{
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	font-weight: 600;
+	font-size: 15px
  }
  .menu li a:hover ,.menu li.active a{
 	 background:#fff;
