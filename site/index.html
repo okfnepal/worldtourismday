@@ -219,34 +219,40 @@
               fillOpacity: 0.7
         });
 
+          function leaveLayer() {
 
-        layer.on({
+              this.bringToBack();
+              this.setStyle({
+                  weight: 2,
+                  opacity: 1,
+                  color: 'white',
+                  dashArray: 3,
+                  fillColor: getProvinceColor(feature.properties.FIRST_DCOD),
+
+              });
+          }
+
+          function enterLayer() {
+              this.bringToFront();
+              this.setStyle({
+                  weight: 2,
+                  opacity: 1,
+                  color: 'white',
+                  dashArray: 3,
+                  fillColor:'#333',
+              });
+          }
+
+
+
+
+          layer.on({
           mouseover: enterLayer,
           mouseout: leaveLayer
         });
       }
 
-      function enterLayer() {
-        this.bringToFront();
-        this.setStyle({
-          weight: 2,
-          opacity: 0.4,
-            fillColor: getProvinceColor(feature.properties.FIRST_DCOD),
 
-
-        });
-      }
-
-
-      function leaveLayer() {
-        this.bringToBack();
-        this.setStyle({
-          weight: 1,
-          opacity: .5,
-            fillColor: getProvinceColor(feature.properties.FIRST_DCOD),
-
-        });
-      }
 
       var Dhunche = [28.1727, 85.3136];
       var myMarker = L.marker(Dhunche);
